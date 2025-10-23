@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Lola Rosa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap" rel="stylesheet">
+    <script src="JS/tailwind-config.js"></script>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<div id="navbar-container"></div>
+
+
+<body class="font-sans text-gray-900 bg-mobile-bg bg-cover bg-fixed bg-center md:bg-hero-bg">
+
+<!-- hero section -->
+<section id="home" class="mt-10 pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+
+      <!-- Left content -->
+      <div class="space-y-6">
+
+        <div class="fade-in-up">
+          <img src="assets/images/HOME-PAGE-SUBTITLE.webp" alt="Celebrating love"
+            class="w-full max-w-md h-auto object-contain">
+        </div>
+
+        <div class="fade-in-up">
+          <a href="#products" class="btn-hover inline-block 
+                   px-4 py-2 text-sm                
+                   md:px-6 md:py-3 md:text-base     
+                   lg:px-8 lg:py-4 lg:text-lg       
+                   bg-lola-magenta text-white font-semibold rounded-lg 
+                   hover:bg-lola-magenta-dark 
+                   focus:outline-none focus:ring-4 focus:ring-lola-magenta-light 
+                   transition-all duration-300">
+            What We Do
+          </a>
+        </div>
+
+      </div>
+
+      <!-- <CHANGE> Image carousel instead of static image -->
+      <div class="fade-in-up">
+        <div class="relative w-full h-auto rounded-2xl shadow-2xl overflow-hidden bg-gray-100">
+          <!-- Carousel container -->
+          <div class="carousel-container relative w-full" style="aspect-ratio: 4/3;">
+            <!-- Carousel images -->
+            <img src="assets/images/HOMEPAGE-CAROUSEL-1st.webp"
+              alt="Professional event stand display showcasing premium quality products"
+              class="carousel-image absolute w-full h-full object-cover transition-opacity duration-500 opacity-100" />
+            <img src="assets/images/HOMEPAGE-CAROUSEL-2nd.webp" alt="Beautiful event decoration and setup"
+              class="carousel-image absolute w-full h-full object-cover transition-opacity duration-500 opacity-0" />
+            <img src="assets/images/HOMEPAGE-CAROUSEL-3rd.webp" alt="Elegant display with premium products"
+              class="carousel-image absolute w-full h-full object-cover transition-opacity duration-500 opacity-0" />
+            <img src="assets/images/HOMEPAGE-CAROUSEL-4th.webp" alt="Memorable moments captured beautifully"
+              class="carousel-image absolute w-full h-full object-cover transition-opacity duration-500 opacity-0" />
+            <img src="assets/images/HOMEPAGE-CAROUSEL-5th.webp" alt="Memorable moments captured beautifully"
+              class="carousel-image absolute w-full h-full object-cover transition-opacity duration-500 opacity-0" />
+            <img src="assets/images/HOMEPAGE-CAROUSEL-6th.webp" alt="Memorable moments captured beautifully"
+              class="carousel-image absolute w-full h-full object-cover transition-opacity duration-500 opacity-0" />
+            <img src="assets/images/HOMEPAGE-CAROUSEL-7th.webp" alt="Memorable moments captured beautifully"
+              class="carousel-image absolute w-full h-full object-cover transition-opacity duration-500 opacity-0" />
+            <img src="assets/images/HOMEPAGE-CAROUSEL-8th.webp" alt="Memorable moments captured beautifully"
+              class="carousel-image absolute w-full h-full object-cover transition-opacity duration-500 opacity-0" />
+            <img src="assets/images/HOMEPAGE-CAROUSEL-9th.webp" alt="Memorable moments captured beautifully"
+              class="carousel-image absolute w-full h-full object-cover transition-opacity duration-500 opacity-0" />
+          </div>
+
+          <!-- Carousel indicators -->
+          <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
+            <button class="carousel-indicator w-2 h-2 rounded-full bg-white opacity-100 transition-opacity"
+              data-index="0"></button>
+            <button class="carousel-indicator w-2 h-2 rounded-full bg-white opacity-50 transition-opacity"
+              data-index="1"></button>
+            <button class="carousel-indicator w-2 h-2 rounded-full bg-white opacity-50 transition-opacity"
+              data-index="2"></button>
+            <button class="carousel-indicator w-2 h-2 rounded-full bg-white opacity-50 transition-opacity"
+              data-index="3"></button>
+            <button class="carousel-indicator w-2 h-2 rounded-full bg-white opacity-50 transition-opacity" data-index="4"></button>
+            <button class="carousel-indicator w-2 h-2 rounded-full bg-white opacity-50 transition-opacity" data-index="5"></button>
+            <button class="carousel-indicator w-2 h-2 rounded-full bg-white opacity-50 transition-opacity" data-index="6"></button>
+            <button class="carousel-indicator w-2 h-2 rounded-full bg-white opacity-50 transition-opacity" data-index="7"></button>
+            <button class="carousel-indicator w-2 h-2 rounded-full bg-white opacity-50 transition-opacity" data-index="8"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+
+<!-- featured section -->
+<section id="products" class="py-20 px-4 sm:px-6 lg:px-8 fade-in-up">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Our Featured Services</h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">Discover our most popular products designed to make your
+        events unforgettable</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <!--1st card-->
+      <div id="video-booth" class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="assets/images/VIDEO-GUEST-BOOK.webp" alt="State-of-the-art video booth with professional lighting"
+          class="w-full h-64 object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Video Guest Booth <span class="text-lola-brown">memo</span><span class="text-lola-magenta-dark">rosa</span></h3>
+          <p class="text-gray-600 mb-4">State-of-the-art video booth services with professional lighting and instant
+            sharing capabilities.</p>
+          <a href="video.html" class="text-lola-teal font-semibold hover:text-lola-teal-dark inline-flex items-center gap-1">
+            Learn more
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!--2nd card-->
+      <div id="stands-metal" class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="assets/images/WOODEN-STANDS.webp" alt="Premium metal display stand with sleek modern design"
+          class="w-full h-64 object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Wooden Stands</h3>
+          <p class="text-gray-600 mb-4">High-quality wooden stands built to last. Perfect for professional events and
+            exhibitions with a modern aesthetic.</p>
+          <a href="wooden-stands.html"
+            class="text-lola-teal font-semibold hover:text-lola-teal-dark inline-flex items-center gap-1">
+            Learn more
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!--3rd card-->
+      <div id="stands-metal" class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="assets/images/METAL-STANDS.webp" alt="Elegant wooden display stand with natural finish"
+          class="w-full h-64 object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Metal Stands</h3>
+          <p class="text-gray-600 mb-4">Handcrafted metal stands with natural elegance. Ideal for rustic and
+            sophisticated event themes.</p>
+          <a href="metal-stands.html"
+            class="text-lola-teal font-semibold hover:text-lola-teal-dark inline-flex items-center gap-1">
+            Learn more
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+
+      <!--4th card-->
+      <div id="stands-metal-2" class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="assets/images/PRINT-ONLY.webp" alt="Premium metal display stand with sleek modern design"
+          class="w-full h-64 object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Picture Packages</h3>
+          <p class="text-gray-600 mb-4">High-quality UV prints. Perfect for professional events and
+            exhibitions with a modern aesthetic.</p>
+          <a href="uv-prints.html"
+            class="text-lola-teal font-semibold hover:text-lola-teal-dark inline-flex items-center gap-1">
+            Learn more
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  
+<!-- about section -->
+<section id="about" class="py-20 px-4 sm:px-6 lg:px-8 fade-in-up">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="order-2 md:order-1">
+        <img src="assets/images/about-500x600.png"
+          alt="Professional craftsman carefully assembling a premium display stand"
+          class="w-full h-auto rounded-2xl shadow-xl" />
+      </div>
+
+      <div class="order-1 md:order-2 space-y-6">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">Why La Lola Rosa Exists – For Moments Like These</h2>
+
+        <p class="text-lg text-gray-600 leading-relaxed">
+          Your wedding is more than just a celebration — it’s the story of your love, your journey, and every moment that led you
+          here. At La Lola Rosa, we believe those memories deserve to be seen, heard, and felt. Through our elegant prints,
+          heartfelt displays, and MemoRosa Video Guestbook, we help you relive the laughter, the tears, and every word spoken from
+          the heart. Each piece we create is a reflection of your story — timeless, personal, and made to be remembered. Because
+          you deserve something beautiful to take home.
+        </p>
+
+        <div class="pt-4">
+          <a href="about.html"
+            class="inline-flex items-center gap-2 px-8 py-3 bg-lola-magenta text-white font-semibold rounded-lg shadow-lg hover:bg-lola-magenta-dark transition-all duration-300 hover:shadow-xl">
+            Learn More
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- testimonials -->
+  <section id="testimonials" class="py-20 px-4 sm:px-6 lg:px-8 fade-in-up">
+    <div class="max-w-2xl mx-auto">
+      <div class="text-center mb-5">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Love Notes From Our Clients</h2>
+        <p class="text-lg text-gray-600 italic">Heartfelt words from the couple who let us be part of their story.</p>
+      </div>
+  
+      <!--  Two-column layout for metal stands and video booth carousels -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+  
+        <!-- Metal Stands Carousel -->
+        <div class="relative">
+          
+          <div id="carousel-stands" class="bg-lola-beige rounded-2xl p-8 shadow-lg min-h-[320px]">
+            <div class="carousel-item active text-center">
+              <div class="flex justify-center mb-6">
+                <img src="assets/images/testimonial-80x80.png" alt="Sarah Johnson"
+                  class="w-16 h-16 rounded-full object-cover" />
+              </div>
+              <blockquote class="text-lg text-gray-700 italic mb-4 leading-relaxed">
+                "The metal stands exceeded our expectations! They were sturdy, elegant, and received countless compliments
+                at our corporate event. Highly recommend!"
+              </blockquote>
+              <p class="font-semibold text-gray-900 text-sm">Sarah Johnson</p>
+              <p class="text-gray-600 text-xs">Event Coordinator, TechCorp</p>
+            </div>
+  
+            <div class="carousel-item text-center">
+              <div class="flex justify-center mb-6">
+                <img src="assets/images/testimonial-80x80.png" alt="Emily Rodriguez"
+                  class="w-16 h-16 rounded-full object-cover" />
+              </div>
+              <blockquote class="text-lg text-gray-700 italic mb-4 leading-relaxed">
+                "Beautiful wooden stands that perfectly matched our rustic theme. The craftsmanship is outstanding, and
+                the setup was seamless. Will definitely use again!"
+              </blockquote>
+              <p class="font-semibold text-gray-900 text-sm">Emily Rodriguez</p>
+              <p class="text-gray-600 text-xs">Festival Organizer</p>
+            </div>
+  
+            <div class="carousel-item text-center">
+              <div class="flex justify-center mb-6">
+                <img src="assets/images/testimonial-80x80.png" alt="Lisa Martinez"
+                  class="w-16 h-16 rounded-full object-cover" />
+              </div>
+              <blockquote class="text-lg text-gray-700 italic mb-4 leading-relaxed">
+                "We've used their services for multiple events now. Consistent quality, reliable delivery, and excellent
+                customer service. They're our go-to vendor!"
+              </blockquote>
+              <p class="font-semibold text-gray-900 text-sm">Lisa Martinez</p>
+              <p class="text-gray-600 text-xs">Marketing Director, Innovate Inc.</p>
+            </div>
+          </div>
+  
+          <div class="flex justify-center items-center gap-3 mt-6">
+            <button
+              class="prev-btn p-2 rounded-full bg-lola-magenta text-white hover:bg-lola-magenta-dark transition-colors"
+              aria-label="Previous testimonial">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+              </svg>
+            </button>
+            <div class="carousel-dots flex gap-2"></div>
+            <button
+              class="next-btn p-2 rounded-full bg-lola-magenta text-white hover:bg-lola-magenta-dark transition-colors"
+              aria-label="Next testimonial">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+  
+        <!-- Video Booth Carousel -->
+        <div class="relative">
+          
+          <div id="carousel-booth" class="bg-lola-beige rounded-2xl p-8 shadow-lg min-h-[320px]">
+            <div class="carousel-item active text-center">
+              <div class="flex justify-center mb-6">
+                <img src="assets/images/testimonial-80x80.png" alt="Michael Chen"
+                  class="w-16 h-16 rounded-full object-cover" />
+              </div>
+              <blockquote class="text-lg text-gray-700 italic mb-4 leading-relaxed">
+                "The video booth was the highlight of our wedding! Guests loved it, and we got amazing memories captured.
+                The team was professional and fun to work with."
+              </blockquote>
+              <p class="font-semibold text-gray-900 text-sm">Michael Chen</p>
+              <p class="text-gray-600 text-xs">Wedding Client</p>
+            </div>
+  
+            <div class="carousel-item text-center">
+              <div class="flex justify-center mb-6">
+                <img src="assets/images/testimonial-80x80.png" alt="David Thompson"
+                  class="w-16 h-16 rounded-full object-cover" />
+              </div>
+              <blockquote class="text-lg text-gray-700 italic mb-4 leading-relaxed">
+                "Professional service from start to finish. The picture packages were high quality, and our guests loved
+                taking home printed memories. Five stars!"
+              </blockquote>
+              <p class="font-semibold text-gray-900 text-sm">David Thompson</p>
+              <p class="text-gray-600 text-xs">Corporate Events Manager</p>
+            </div>
+          </div>
+  
+          <div class="flex justify-center items-center gap-3 mt-6">
+            <button
+              class="prev-btn p-2 rounded-full bg-lola-magenta text-white hover:bg-lola-magenta-dark transition-colors"
+              aria-label="Previous testimonial">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+              </svg>
+            </button>
+            <div class="carousel-dots flex gap-2"></div>
+            <button
+              class="next-btn p-2 rounded-full bg-lola-magenta text-white hover:bg-lola-magenta-dark transition-colors"
+              aria-label="Next testimonial">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- gallery -->
+  <section id="gallery" class="py-20 px-4 sm:px-6 lg:px-8 fade-in-up">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Where stories come to life</h2>
+        <p class="text-lg text-gray-600 italic">Your moments, beautifully brought to life</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="assets/images/gallery-300x300.png" alt="Professional event display stand at corporate gathering"
+          class="w-full h-64 object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow" />
+        <img src="assets/images/gallery-300x300.png" alt="Elegant wedding photo booth with guests"
+          class="w-full h-64 object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow" />
+        <img src="assets/images/gallery-300x300.png" alt="Rustic wooden stand at outdoor festival"
+          class="w-full h-64 object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow" />
+        <img src="assets/images/gallery-300x300.png" alt="Modern metal stand at trade show exhibition"
+          class="w-full h-64 object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow" />
+      </div>
+    </div>
+  </section>
+
+
+  <!-- accordion -->
+  <section id="faq" class="py-20 px-4 sm:px-6 lg:px-8 fade-in-up">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Everything You Need To Know</h2>
+        <p class="text-lg text-gray-600 italic">From bookings to timelines, here’s everything you need to know about having La Lola Rosa at your celebration.</p>
+      </div>
+  
+      <div class="space-y-4">
+        
+        <div class="border border-gray-200 rounded-lg overflow-hidden">
+          <button
+            class="accordion-button w-full px-6 py-4 text-left bg-white hover:bg-gray-50 transition-colors duration-200 flex items-center justify-between gap-4"
+            aria-expanded="false">
+            <span class="text-lg font-semibold text-gray-900">What types of events do you cater to?</span>
+            <svg class="accordion-icon w-6 h-6 text-lola-magenta flex-shrink-0 transition-transform duration-300" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <!-- <CHANGE> replaced text content with 4 cards grid -->
+          <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300">
+            <div class="px-6 py-6 bg-lola-magenta-dark">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Metal Stands Card -->
+                <div class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <h3 class="text-lg font-semibold text-gray-900 mb-2">Metal Stands</h3>
+                  <p class="text-gray-600 text-sm">Sleek and modern metal stands perfect for contemporary events. Durable,
+                    elegant, and customizable to match your event theme.</p>
+                </div>
+        
+                <!-- Wooden Stands Card -->
+                <div class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <h3 class="text-lg font-semibold text-gray-900 mb-2">Wooden Stands</h3>
+                  <p class="text-gray-600 text-sm">Rustic and warm wooden stands ideal for weddings and outdoor events. Adds a
+                    natural, elegant touch to any celebration.</p>
+                </div>
+        
+                <!-- Video Booth Card -->
+                <div class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <h3 class="text-lg font-semibold text-gray-900 mb-2">Video Booth</h3>
+                  <p class="text-gray-600 text-sm">State-of-the-art video booth for recording guest messages and memories.
+                    Instant sharing and professional compilation included.</p>
+                </div>
+        
+                <!-- UV Prints Card -->
+                <div class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <h3 class="text-lg font-semibold text-gray-900 mb-2">UV Prints</h3>
+                  <p class="text-gray-600 text-sm">High-quality UV printed photos with vibrant colors and lasting durability.
+                    Perfect for instant keepsakes at your event.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        
+        <div class="border border-gray-200 rounded-lg overflow-hidden">
+          <button
+            class="accordion-button w-full px-6 py-4 text-left bg-white hover:bg-gray-50 transition-colors duration-200 flex items-center justify-between gap-4"
+            aria-expanded="false">
+            <span class="text-lg font-semibold text-gray-900">How far in advance should I book your services?</span>
+            <svg class="accordion-icon w-6 h-6 text-lola-magenta flex-shrink-0 transition-transform duration-300" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300">
+            <div class="px-6 py-4 bg-lola-magenta-dark">
+              <p class="text-white leading-relaxed">
+                We recommend booking at least 4-6 weeks in advance to ensure availability, especially during
+                peak wedding and event seasons. However, we do our best to accommodate last-minute requests
+                when possible. Contact us as soon as you know your event date!
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        
+        <div class="border border-gray-200 rounded-lg overflow-hidden">
+          <button
+            class="accordion-button w-full px-6 py-4 text-left bg-white hover:bg-gray-50 transition-colors duration-200 flex items-center justify-between gap-4"
+            aria-expanded="false">
+            <span class="text-lg font-semibold text-gray-900">Do you provide setup and teardown services?</span>
+            <svg class="accordion-icon w-6 h-6 text-lola-magenta flex-shrink-0 transition-transform duration-300" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300">
+            <div class="px-6 py-4 bg-lola-magenta-dark">
+              <p class="text-white leading-relaxed">
+                Yes! Full setup and teardown services are included with all our packages. Our professional team
+                will arrive early to set up everything perfectly and return after your event to handle all the
+                teardown, so you can focus on enjoying your special day.
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        
+        <div class="border border-gray-200 rounded-lg overflow-hidden">
+          <button
+            class="accordion-button w-full px-6 py-4 text-left bg-white hover:bg-gray-50 transition-colors duration-200 flex items-center justify-between gap-4"
+            aria-expanded="false">
+            <span class="text-lg font-semibold text-gray-900">Can I customize the design of the stands?</span>
+            <svg class="accordion-icon w-6 h-6 text-lola-magenta flex-shrink-0 transition-transform duration-300" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300">
+            <div class="px-6 py-4 bg-lola-magenta-dark">
+              <p class="text-white leading-relaxed">
+                We specialize in custom designs tailored to your event theme, color scheme, and
+                personal preferences. Our design team will work closely with you to create stands that perfectly
+                match your vision, whether you want rustic wood, modern metal, or a combination of materials.
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        
+        <div class="border border-gray-200 rounded-lg overflow-hidden">
+          <button
+            class="accordion-button w-full px-6 py-4 text-left bg-white hover:bg-gray-50 transition-colors duration-200 flex items-center justify-between gap-4"
+            aria-expanded="false">
+            <span class="text-lg font-semibold text-gray-900">What's included in the picture packages?</span>
+            <svg class="accordion-icon w-6 h-6 text-lola-magenta flex-shrink-0 transition-transform duration-300" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300">
+            <div class="px-6 py-4 bg-lola-magenta-dark">
+              <p class="text-white leading-relaxed">
+                Our picture packages include high-resolution digital photos, professional printing options,
+                custom photo layouts, props and backdrops, an attendant to assist guests, and instant printing
+                capabilities. All digital files are delivered within 48 hours after your event.
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        
+        <div class="border border-gray-200 rounded-lg overflow-hidden">
+          <button
+            class="accordion-button w-full px-6 py-4 text-left bg-white hover:bg-gray-50 transition-colors duration-200 flex items-center justify-between gap-4"
+            aria-expanded="false">
+            <span class="text-lg font-semibold text-gray-900">Do you offer video booth services?</span>
+            <svg class="accordion-icon w-6 h-6 text-lola-magenta flex-shrink-0 transition-transform duration-300" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300">
+            <div class="px-6 py-4 bg-lola-magenta-dark">
+              <p class="text-white leading-relaxed">
+                Yes! Our state-of-the-art video booth allows guests to record fun messages and memories.
+                Videos can be instantly shared via email, text, or social media. We also provide a compilation
+                of all videos after the event, creating a wonderful keepsake of your special day.
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        
+        <div class="border border-gray-200 rounded-lg overflow-hidden">
+          <button
+            class="accordion-button w-full px-6 py-4 text-left bg-white hover:bg-gray-50 transition-colors duration-200 flex items-center justify-between gap-4"
+            aria-expanded="false">
+            <span class="text-lg font-semibold text-gray-900">What is your cancellation policy?</span>
+            <svg class="accordion-icon w-6 h-6 text-lola-magenta flex-shrink-0 transition-transform duration-300" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300">
+            <div class="px-6 py-4 bg-lola-magenta-dark">
+              <p class="text-white leading-relaxed">
+                Cancellations made 30+ days before the event receive a full refund minus a 10% processing fee.
+                Cancellations 15-29 days prior receive a 50% refund. Unfortunately, cancellations within 14 days
+                of the event are non-refundable. We understand emergencies happen, so please contact us to discuss
+                your specific situation.
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        
+        <div class="border border-gray-200 rounded-lg overflow-hidden">
+          <button
+            class="accordion-button w-full px-6 py-4 text-left bg-white hover:bg-gray-50 transition-colors duration-200 flex items-center justify-between gap-4"
+            aria-expanded="false">
+            <span class="text-lg font-semibold text-gray-900">Do you travel for events outside your local area?</span>
+            <svg class="accordion-icon w-6 h-6 text-lola-magenta flex-shrink-0 transition-transform duration-300" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300">
+            <div class="px-6 py-4 bg-lola-magenta-dark">
+              <p class="text-white leading-relaxed">
+                Yes, we're happy to travel for events! We regularly service events across the country.
+                Travel fees may apply depending on the distance and logistics involved. Contact us with your
+                event location, and we'll provide a detailed quote including any travel costs.
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        
+        <div class="border border-gray-200 rounded-lg overflow-hidden">
+          <button
+            class="accordion-button w-full px-6 py-4 text-left bg-white hover:bg-gray-50 transition-colors duration-200 flex items-center justify-between gap-4"
+            aria-expanded="false">
+            <span class="text-lg font-semibold text-gray-900">What payment methods do you accept?</span>
+            <svg class="accordion-icon w-6 h-6 text-lola-magenta flex-shrink-0 transition-transform duration-300" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300">
+            <div class="px-6 py-4 bg-lola-magenta-dark">
+              <p class="text-white leading-relaxed">
+                We accept all major credit cards, debit cards, bank transfers, and digital payment platforms
+                like Venmo and PayPal. A 50% deposit is required to secure your booking, with the remaining
+                balance due 7 days before your event date.
+              </p>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 fade-in-up">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Ready to Elevate Your Event?</h2>
+      <p class="text-lg text-gray-600 mb-8">Get in touch with us today to discuss your needs and receive a custom quote
+      </p>
+
+      <div class="space-y-6">
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a href="mailto:info@premiumstands.com"
+            class="inline-flex items-center gap-2 text-gray-700 hover:text-lola-teal transition-colors">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+              </path>
+            </svg>
+            lalolarosa.ph@gmail.com
+          </a>
+          <a href="tel:+15551234567"
+            class="inline-flex items-center gap-2 text-gray-700 hover:text-lola-teal transition-colors">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+              </path>
+            </svg>
+            09605763097
+          </a>
+        </div>
+
+        <a href="mailto:info@premiumstands.com?subject=Event Inquiry"
+          class="btn-hover inline-block px-8 py-4 bg-lola-magenta text-white font-semibold rounded-lg hover:bg-lola-magenta-dark focus:outline-none focus:ring-4 focus:ring-lola-magenta-light">
+          Request a Quote
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <div id="footer-container"></div>
+  
+  <!--tesimonials carousel-->
+  <script>
+    function initCarousel(carouselSelector) {
+        const carousel = document.querySelector(carouselSelector);
+        const carouselItems = carousel.querySelectorAll('.carousel-item');
+        const prevBtn = carousel.parentElement.querySelector('.prev-btn');
+        const nextBtn = carousel.parentElement.querySelector('.next-btn');
+        const dotsContainer = carousel.parentElement.querySelector('.carousel-dots');
+
+        let currentIndex = 0;
+        let autoplayInterval;
+        let isPaused = false;
+
+        // Create dots
+        carouselItems.forEach((_, index) => {
+          const dot = document.createElement('button');
+          dot.className = `w-2 h-2 rounded-full transition-all ${index === 0 ? 'bg-lola-magenta w-6' : 'bg-gray-300'}`;
+          dot.setAttribute('aria-label', `Go to testimonial ${index + 1}`);
+          dot.addEventListener('click', () => goToSlide(index));
+          dotsContainer.appendChild(dot);
+        });
+
+        const dots = dotsContainer.querySelectorAll('button');
+
+        function updateCarousel() {
+          carouselItems.forEach((item, index) => {
+            item.classList.toggle('active', index === currentIndex);
+            item.style.display = index === currentIndex ? 'block' : 'none';
+          });
+
+          dots.forEach((dot, index) => {
+            if (index === currentIndex) {
+              dot.className = 'w-6 h-2 rounded-full bg-lola-magenta transition-all';
+            } else {
+              dot.className = 'w-2 h-2 rounded-full bg-gray-300 transition-all';
+            }
+          });
+        }
+
+        function goToSlide(index) {
+          currentIndex = index;
+          updateCarousel();
+          resetAutoplay();
+        }
+
+        function nextSlide() {
+          currentIndex = (currentIndex + 1) % carouselItems.length;
+          updateCarousel();
+        }
+
+        function prevSlide() {
+          currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+          updateCarousel();
+        }
+
+        function startAutoplay() {
+          if (!isPaused) {
+            autoplayInterval = setInterval(nextSlide, 3000);
+          }
+        }
+
+        function stopAutoplay() {
+          clearInterval(autoplayInterval);
+        }
+
+        function resetAutoplay() {
+          stopAutoplay();
+          startAutoplay();
+        }
+
+        // Event listeners
+        nextBtn.addEventListener('click', () => {
+          nextSlide();
+          resetAutoplay();
+        });
+
+        prevBtn.addEventListener('click', () => {
+          prevSlide();
+          resetAutoplay();
+        });
+
+        // Pause on hover
+        carousel.addEventListener('mouseenter', () => {
+          isPaused = true;
+          stopAutoplay();
+        });
+
+        carousel.addEventListener('mouseleave', () => {
+          isPaused = false;
+          startAutoplay();
+        });
+
+        // Initialize
+        updateCarousel();
+        startAutoplay();
+      }
+
+      // Initialize both carousels
+      initCarousel('#carousel-stands');
+      initCarousel('#carousel-booth');
+  </script>
+        
+        <!-- JS PARA SA CAROUSEL SA HERO SECTION-->
+        <script>
+          // Carousel functionality
+          const carouselImages = document.querySelectorAll('.carousel-image');
+          const carouselIndicators = document.querySelectorAll('.carousel-indicator');
+          let nowIndex = 0;
+          const totalImages = carouselImages.length;
+          const rotationInterval = 3000; // 3 seconds
+
+          function showImage(index) {
+            // Hide all images
+            carouselImages.forEach((img) => {
+              img.classList.remove('opacity-100');
+              img.classList.add('opacity-0');
+            });
+
+            // Show current image
+            carouselImages[index].classList.remove('opacity-0');
+            carouselImages[index].classList.add('opacity-100');
+
+            // Update indicators
+            carouselIndicators.forEach((indicator, i) => {
+              if (i === index) {
+                indicator.classList.remove('opacity-50');
+                indicator.classList.add('opacity-100');
+              } else {
+                indicator.classList.remove('opacity-100');
+                indicator.classList.add('opacity-50');
+              }
+            });
+          }
+
+          function nextImage() {
+            nowIndex = (nowIndex + 1) % totalImages;
+            showImage(nowIndex);
+          }
+
+          // Add click handlers to indicators
+          carouselIndicators.forEach((indicator) => {
+            indicator.addEventListener('click', () => {
+              nowIndex = parseInt(indicator.dataset.index);
+              showImage(nowIndex);
+              // Reset the auto-rotation timer
+              clearInterval(autoRotateTimer);
+              autoRotateTimer = setInterval(nextImage, rotationInterval);
+            });
+          });
+
+          // Auto-rotate carousel
+          let autoRotateTimer = setInterval(nextImage, rotationInterval);
+        </script>
+
+  <!-- accordion js -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const accordionButtons = document.querySelectorAll('.accordion-button');
+
+      accordionButtons.forEach(button => {
+        button.addEventListener('click', function () {
+          const content = this.nextElementSibling;
+          const icon = this.querySelector('.accordion-icon');
+          const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+          // Close all other accordions
+          accordionButtons.forEach(otherButton => {
+            if (otherButton !== this) {
+              const otherContent = otherButton.nextElementSibling;
+              const otherIcon = otherButton.querySelector('.accordion-icon');
+              otherButton.setAttribute('aria-expanded', 'false');
+              otherContent.style.maxHeight = '0px';
+              otherIcon.style.transform = 'rotate(0deg)';
+            }
+          });
+
+          // Toggle current accordion
+          if (isExpanded) {
+            this.setAttribute('aria-expanded', 'false');
+            content.style.maxHeight = '0px';
+            icon.style.transform = 'rotate(0deg)';
+          } else {
+            this.setAttribute('aria-expanded', 'true');
+            content.style.maxHeight = content.scrollHeight + 'px';
+            icon.style.transform = 'rotate(180deg)';
+          }
+        });
+      });
+    });
+  </script>
+
+
+<script src="JS/main.js"></script>
+</body>
+
+</html>

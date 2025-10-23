@@ -1,0 +1,130 @@
+<!-- Top Contact Bar -->
+<div class="fixed top-0 left-0 right-0 bg-gray-50 border-b border-gray-200 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between py-2 text-sm">
+
+      <!-- Email -->
+      <div class="flex items-center gap-2 text-gray-600">
+        <i class="far fa-envelope text-lola-magenta-dark"></i>
+        <a href="mailto:inquiries@cheskafreight.com.ph" class="hover:text-lola-teal transition-colors">
+          lalolarosa.ph@gmail.com
+        </a>
+      </div>
+
+      <!-- Social Media -->
+      <div class="flex items-center gap-4">
+
+        <!-- Social Media Icons -->
+        <div class="flex items-center gap-3">
+          <a href="https://www.facebook.com/share/19z6sQuHDy/" target="_blank"
+            class="text-lola-magenta-dark hover:text-lola-teal transition-colors">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/lalolarosa.ph?igsh=MWZzNjNmaG13YXJpNA==" target="_blank"
+            class="text-lola-magenta-dark hover:text-lola-teal transition-colors">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com/@lalolarosa.ph?_t=ZS-90PJv2NhYzl&_r=1" target="_blank"
+            class="text-lola-magenta-dark hover:text-lola-teal transition-colors">
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Main Navbar -->
+<nav id="navbar" class="fixed top-9 left-0 right-0 bg-white z-40 shadow-sm transition-shadow duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between gap-x-16 h-16">
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="index.html" class="text-gray-700 hover:text-lola-teal transition-colors">Home</a>
+        <a href="about.html" class="text-gray-700 hover:text-lola-teal transition-colors">About</a>
+
+        <!-- Services Dropdown -->
+        <div class="relative dropdown-container">
+          <button
+            class="text-gray-700 hover:text-lola-teal transition-colors flex items-center gap-1 focus:outline-none focus:text-lola-teal"
+            aria-haspopup="true" aria-expanded="false">
+            <a href="#products" class="flex-1 text-left">Services</a>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2">
+            <a href="video.html"
+              class="block px-4 py-2 text-gray-700 hover:bg-lola-teal-light hover:text-lola-teal transition-colors">Video Guest Book</a>
+            <a href="wooden-stands.html"
+              class="block px-4 py-2 text-gray-700 hover:bg-lola-teal-light hover:text-lola-teal transition-colors">Wooden Stands</a>
+            <a href="metal-stands.html"
+              class="block px-4 py-2 text-gray-700 hover:bg-lola-teal-light hover:text-lola-teal transition-colors">Metal Stands</a>
+            <a href="uv-prints.html"
+              class="block px-4 py-2 text-gray-700 hover:bg-lola-teal-light hover:text-lola-teal transition-colors">Picture Packages</a>
+          </div>
+        </div>
+
+        <a href="gallery.html" class="text-gray-700 hover:text-lola-teal transition-colors">Gallery</a>
+
+
+      </div>
+
+      <!-- Logo -->
+      <div class="order-2 flex-shrink-0 ml-auto flex">
+        <a href="/">
+          <img src="assets/images/llr-logo.webp" alt="Logo" class="h-10 w-auto">
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-button"
+        class="order-1 md:hidden p-2 rounded-lg hover:bg-lola-beige focus:outline-none focus:ring-2 focus:ring-lola-teal"
+        aria-label="Toggle mobile menu" aria-expanded="false">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu md:hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="index.html"
+          class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-lola-teal-light hover:text-lola-teal transition-colors">Home</a>
+        <a href="about.html"
+          class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-lola-teal-light hover:text-lola-teal transition-colors">About</a>
+
+        <!-- Mobile Services Dropdown -->
+        <div>
+          <button id="mobile-services-button"
+            class="w-full text-left px-3 py-2 rounded-lg text-gray-700 hover:bg-lola-teal-light hover:text-lola-teal transition-colors flex items-center justify-between"
+            aria-expanded="false">
+            <a href="#products" class="flex-1 text-left">Services</a>
+            <svg class="w-4 h-4 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+
+          </button>
+          <div id="mobile-services-menu" class="mobile-menu pl-4">
+            <a href="video.html"
+              class="block px-3 py-2 rounded-lg text-gray-600 hover:bg-lola-teal-light hover:text-lola-teal transition-colors">Video Guest Book</a>
+            <a href="wooden-stands.html"
+              class="block px-3 py-2 rounded-lg text-gray-600 hover:bg-lola-teal-light hover:text-lola-teal transition-colors">Wooden Stands</a>
+            <a href="metal-stands.html"
+              class="block px-3 py-2 rounded-lg text-gray-600 hover:bg-lola-teal-light hover:text-lola-teal transition-colors">Metal Stands/a>
+            <a href="uv-prints.html"
+              class="block px-3 py-2 rounded-lg text-gray-600 hover:bg-lola-teal-light hover:text-lola-teal transition-colors">Picture Packages</a>
+          </div>
+        </div>
+
+        <a href="gallery.html"
+          class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-lola-teal-light hover:text-lola-teal transition-colors">Gallery</a>
+      </div>
+    </div>
+  </div>
+</nav>

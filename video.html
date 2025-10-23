@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Booth - memorosa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <script src="JS/tailwind-config.js"></script>
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<!-- Top Contact Bar -->
+<div id="navbar-container"></div>
+
+<body class="font-sans bg-hero-bg bg-cover bg-fixed bg-center">
+
+<!-- hero esection -->
+  <section class="min-h-screen flex items-center">
+    <div class="container mx-auto px-4 py-12">
+      <div class="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
+        
+        <div class="order-2 md:order-1">
+          <img src="assets/images/hero-800x600.png"
+            alt="Video Booth Setup" class="w-full h-auto rounded-lg shadow-2xl" />
+        </div>
+
+        
+        <div class="order-1 md:order-2 text-center md:text-left space-y-6">
+          <div class="space-y-2">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-lola-brown">
+              memo<span class="text-lola-magenta-dark">rosa</span>
+            </h1>
+          </div>
+
+          <div class="space-y-4">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-script text-stone-800">
+              Video guestbook
+            </h2>
+            <p class="text-lg md:text-xl text-stone-600 italic">
+              Your guests, their messages,<br />
+              your forever keepsake.
+            </p>
+          </div>
+
+          <div class="pt-6">
+            <h3 class="text-2xl md:text-3xl font-bold text-stone-800 mb-2">
+              SMILES, STORIES<br />
+              & SECRETS
+            </h3>
+            <p class="text-lg text-stone-600 italic">
+              captured just for you
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 ">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-center items-center">
+        <div class="w-full max-w-5xl">
+          <video class="w-full aspect-video rounded-lg shadow-2xl object-cover" controls
+            poster="https://images.unsplash.com/photo-1519741497674-611481863552?w=1280&h=720&fit=crop">
+            <source src="assets/video/video-social.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- main content -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      
+      <div class="text-center mb-12">
+        <h2 class="text-4xl md:text-5xl lg:text-6xl mb-4">
+          <span class="font-serif italic">What</span>
+          <span class="font-sans font-normal">makes us</span>
+          <span class="font-serif italic">unique.</span>
+        </h2>
+        <p class="text-stone-600 text-sm md:text-base italic max-w-2xl mx-auto">
+          We go beyond just capturing videos — we make sure they're<br />
+          memories worth keeping.
+        </p>
+      </div>
+
+      
+      <div class="grid md:grid-cols-3 gap-8 mb-16 max-w-5xl mx-auto">
+
+        <div class="text-center">
+          <div class="w-48 h-48 mx-auto mb-4">
+            <img src="assets/images/ipad.webp" alt="iPad Live View" class="w-full h-full object-contain" />
+          </div>
+          <h3 class="text-xl font-bold mb-2 uppercase">iPad Live View</h3>
+          <p class="text-xs text-stone-600 italic">
+            Guests can see themselves in real-<br />
+            time, making the experience more<br />
+            fun and interactive.
+          </p>
+        </div>
+        
+        
+        <div class="text-center">
+          <div class="w-48 h-48 mx-auto mb-4">
+            <img src="assets/images/OSMO.webp" alt="Osmo Pocket 3" class="w-full h-full object-contain" />
+          </div>
+          <h3 class="text-xl font-bold mb-2 uppercase">Osmo Pocket 3</h3>
+          <p class="text-xs text-stone-600 italic mb-4">
+            A powerful 4K camera that<br />
+            guarantees crisp, high-quality<br />
+            videos you'll treasure
+          </p>
+          <div class="text-xs space-y-1">
+            <p><span class="font-bold">PORTRAIT MODE</span> 3K resolution</p>
+            <p><span class="font-bold">LANDSCAPE MODE</span> 4K resolution</p>
+          </div>
+        </div>
+        
+        
+        <div class="text-center">
+          <div class="flex justify-center items-center mb-4 h-48">
+            <img src="assets/images/mic.webp" alt="DJI Osmo Mic 2" class="w-full h-full object-contain" />
+          </div>
+          <h3 class="text-xl font-bold mb-2 uppercase">DJI Osmo Mic 2 on a<br />Handheld Mic Stick</h3>
+          <p class="text-xs text-stone-600 italic">
+            Ensures clear, crisp sound with<br />
+            noise cancellation, giving guests<br />
+            that fun "on the mic" experience.
+          </p>
+        </div>
+        </div>
+
+     
+      <div class="text-center mb-12">
+        <p class="text-3xl md:text-4xl font-bold mb-4">
+          Standard Rate: <span class="line-through italic">₱10,000.00</span>
+        </p>
+      </div>
+
+      
+      <div class="mb-12">
+        <h3 class="text-2xl md:text-3xl font-bold text-center mb-8 uppercase">Actual Set-Up</h3>
+        <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-8">
+          <img src="assets/images/actual-setup1.jpg" alt="Setup 1"
+            class="w-full h-64 object-cover rounded-lg shadow-lg" />
+          <img src="assets/images/actual-setup2.jpg" alt="Setup 2"
+            class="w-full h-64 object-cover rounded-lg shadow-lg" />
+          <img src="assets/images/actual-setup3.jpg" alt="Setup 3"
+            class="w-full h-64 object-cover rounded-lg shadow-lg" />
+        </div>
+      </div>
+
+
+      <div class="text-center mb-12">
+        <p class="text-lg md:text-xl mb-4 font-serif italic">
+          First <span class="font-bold not-italic">8 lucky clients</span> who book will enjoy
+        </p>
+        <p class="text-base md:text-lg mb-2">our introductory price of</p>
+        <div class="inline-block bg-lola-brown text-white px-8 py-4 rounded-full">
+          <p class="text-3xl md:text-4xl font-bold italic">PROMO: ₱8,888.00</p>
+        </div>
+      </div>
+
+      
+      <div class="max-w-4xl mx-auto p-8 mb-12">
+        <h3 class="text-2xl md:text-3xl font-bold mb-6">Inclusions:</h3>
+        <ul class="space-y-3 text-sm md:text-base">
+          <li class="flex items-start">
+            <span class="mr-2">•</span>
+            <span><strong>3 hours of unlimited guest video messages</strong></span>
+          </li>
+          <li class="flex items-start">
+            <span class="mr-2">•</span>
+            <span>One full video guestbook compilation (edited)</span>
+          </li>
+          <li class="flex items-start">
+            <span class="mr-2">•</span>
+            <span><strong>Osmo Pocket 3 camera</strong> – choose <strong>Portrait (3K) or Landscape (4K)
+                mode</strong></span>
+          </li>
+          <li class="flex items-start">
+            <span class="mr-2">•</span>
+            <span>Professional <strong>microphone for crisp audio</strong></span>
+          </li>
+          <li class="flex items-start">
+            <span class="mr-2">•</span>
+            <span><strong>Styled booth setup</strong> with white mesh & floral accents</span>
+          </li>
+          <li class="flex items-start">
+            <span class="mr-2">•</span>
+            <span>Private download link of individual LRF (Low-Res Files) from Osmo Pocket</span>
+          </li>
+          <li class="flex items-start">
+            <span class="mr-2">•</span>
+            <span><strong>FREE 3pcs High-Quality UV Prints</strong> on Sintra Board (18" x 24") with wooden easel stands
+              (free use)</span>
+          </li>
+          <li class="flex items-start ml-6">
+            <span class="mr-2">•</span>
+            <span class="italic underline">Perfect for your prenup photos or directional signages</span>
+          </li>
+          <li class="flex items-start">
+            <span class="mr-2">•</span>
+            <span>Custom booth signage to guide your guests</span>
+          </li>
+          <li class="flex items-start">
+            <span class="mr-2">•</span>
+            <span><strong>No Out-of-Town Fee (OOTF)</strong> for Metro Manila, Antipolo, Cavite, Laguna, and
+              Bulacan</span>
+          </li>
+        </ul>
+      </div>
+
+
+    <div class="flex justify-center items-center mb-12">
+      <div class="relative">
+        <div
+          class="absolute -top-8 -left-8 bg-amber-800 text-white rounded-full w-20 h-20 flex items-center justify-center font-bold text-lg transform -rotate-12">
+          FREE
+        </div>
+        <div class="p-2 border-10 border-solid">
+          <img src="assets/images/gallery-300x300.png" alt="Free UV Print" class="object-cover" />
+        </div>
+      </div>
+    </div>
+
+
+      
+      <div class="text-center">
+        <h3 class="text-4xl md:text-5xl font-bold mb-2">
+          <span class="text-lola-brown">BOOK</span> <span class="text-lola-magenta-dark">NOW!</span>
+        </h3>
+        <p class="text-xl md:text-2xl font-bold mb-8 italic">We only cater 1 event per day!</p>
+
+        <div class="flex justify-center items-center gap-8 mb-8">
+          <p class="text-2xl md:text-3xl font-bold text-lola-brown">memo<span class="text-lola-magenta-dark">rosa</span></p>
+          <p class="text-3xl md:text-4xl font-script">Video<br />guestbook</p>
+        </div>
+
+        <p class="text-md text-stone-500 italic">*Valid only for 2025 - 2026 events!</p>
+      </div>
+    </div>
+  </section>
+
+
+      <!-- footer -->
+      <div id="footer-container"></div>
+
+  <!-- JS -->
+  <script src="JS/main.js"></script>
+      
+</body>
+      
+</html>
