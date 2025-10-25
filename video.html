@@ -21,42 +21,66 @@
 <!-- Top Contact Bar -->
 <div id="navbar-container"></div>
 
-<body class="font-sans bg-hero-bg bg-cover bg-fixed bg-center">
+<body class="text-xs sm:text-sm md:text-base lg:text-lg font-sans bg-hero-bg bg-cover bg-fixed bg-center">
 
-<!-- hero esection -->
-  <section class="min-h-screen flex items-center">
+<!-- hero section -->
+  <section class="min-h-screen flex items-center pt-20">
     <div class="container mx-auto px-4 py-12">
-      <div class="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
-        
-        <div class="order-2 md:order-1">
-          <img src="assets/images/hero-800x600.png"
-            alt="Video Booth Setup" class="w-full h-auto rounded-lg shadow-2xl" />
+      <div class="flex flex-col items-center gap-8">
+  
+        <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 w-full">
+  
+          
+          <div class="flex justify-center flex-shrink-0">
+            <img src="assets/images/memorosa-video-guestbook.webp" alt="Memorosa logo"
+              class="w-32 sm:w-40 md:w-48 lg:w-56 max-w-full h-auto" />
+          </div>
+  
+          
+          <div class="w-full md:w-auto md:flex-1 max-w-2xl">
+            <div class="carousel-container" style="aspect-ratio: 4/3;">
+             
+              <div class="carousel-slide active">
+                <img src="assets/images/HOMEPAGE-CAROUSEL-1st.webp" alt="Video Booth Setup 1" />
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/HOMEPAGE-CAROUSEL-2nd.webp" alt="Video Booth Setup 2" />
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/HOMEPAGE-CAROUSEL-3rd.webp" alt="Video Booth Setup 3" />
+              </div>
+  
+              
+              <button class="carousel-button prev" onclick="changeSlide(-1)">❮</button>
+              <button class="carousel-button next" onclick="changeSlide(1)">❯</button>
+  
+             
+              <div class="carousel-dots">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+              </div>
+            </div>
+          </div>
+  
+          
+          <div class="flex justify-center flex-shrink-0">
+            <img src="assets/images/memorosa-video-guestbook-2.webp" alt="Memorosa logo"
+              class="w-32 sm:w-40 md:w-48 lg:w-56 max-w-full h-auto" />
+          </div>
         </div>
-
+  
         
-        <div class="order-1 md:order-2 text-center md:text-left space-y-6">
-          <div class="space-y-2">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-lola-brown">
-              memo<span class="text-lola-magenta-dark">rosa</span>
-            </h1>
-          </div>
-
-          <div class="space-y-4">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-script text-stone-800">
-              Video guestbook
-            </h2>
-            <p class="text-lg md:text-xl text-stone-600 italic">
-              Your guests, their messages,<br />
-              your forever keepsake.
-            </p>
-          </div>
-
-          <div class="pt-6">
-            <h3 class="text-2xl md:text-3xl font-bold text-stone-800 mb-2">
-              SMILES, STORIES<br />
-              & SECRETS
+        <div class="text-center space-y-4 max-w-2xl">
+          <p class="text-stone-600 italic text-sm sm:text-base">
+            Your guests, their messages, your forever keepsake.
+          </p>
+  
+          <div>
+            <h3 class="font-bold text-stone-800 text-lg sm:text-xl md:text-2xl mb-2">
+              SMILES, STORIES, & SECRETS
             </h3>
-            <p class="text-lg text-stone-600 italic">
+            <p class="text-stone-600 italic text-sm sm:text-base">
               captured just for you
             </p>
           </div>
@@ -64,6 +88,8 @@
       </div>
     </div>
   </section>
+  
+  
 
   <section class="py-16 ">
     <div class="container mx-auto px-4">
@@ -79,6 +105,10 @@
     </div>
   </section>
 
+
+
+
+
   <!-- main content -->
   <section class="py-16">
     <div class="container mx-auto px-4">
@@ -89,7 +119,7 @@
           <span class="font-sans font-normal">makes us</span>
           <span class="font-serif italic">unique.</span>
         </h2>
-        <p class="text-stone-600 text-sm md:text-base italic max-w-2xl mx-auto">
+        <p class="text-stone-600 italic max-w-2xl mx-auto">
           We go beyond just capturing videos — we make sure they're<br />
           memories worth keeping.
         </p>
@@ -102,8 +132,8 @@
           <div class="w-48 h-48 mx-auto mb-4">
             <img src="assets/images/ipad.webp" alt="iPad Live View" class="w-full h-full object-contain" />
           </div>
-          <h3 class="text-xl font-bold mb-2 uppercase">iPad Live View</h3>
-          <p class="text-xs text-stone-600 italic">
+          <h3 class="font-bold mb-2 uppercase">iPad Live View</h3>
+          <p class="text-stone-600 italic">
             Guests can see themselves in real-<br />
             time, making the experience more<br />
             fun and interactive.
@@ -115,13 +145,13 @@
           <div class="w-48 h-48 mx-auto mb-4">
             <img src="assets/images/OSMO.webp" alt="Osmo Pocket 3" class="w-full h-full object-contain" />
           </div>
-          <h3 class="text-xl font-bold mb-2 uppercase">Osmo Pocket 3</h3>
-          <p class="text-xs text-stone-600 italic mb-4">
+          <h3 class="font-bold mb-2 uppercase">Osmo Pocket 3</h3>
+          <p class="text-stone-600 italic mb-4">
             A powerful 4K camera that<br />
             guarantees crisp, high-quality<br />
             videos you'll treasure
           </p>
-          <div class="text-xs space-y-1">
+          <div class="space-y-1">
             <p><span class="font-bold">PORTRAIT MODE</span> 3K resolution</p>
             <p><span class="font-bold">LANDSCAPE MODE</span> 4K resolution</p>
           </div>
@@ -132,8 +162,8 @@
           <div class="flex justify-center items-center mb-4 h-48">
             <img src="assets/images/mic.webp" alt="DJI Osmo Mic 2" class="w-full h-full object-contain" />
           </div>
-          <h3 class="text-xl font-bold mb-2 uppercase">DJI Osmo Mic 2 on a<br />Handheld Mic Stick</h3>
-          <p class="text-xs text-stone-600 italic">
+          <h3 class="font-bold mb-2 uppercase">DJI Osmo Mic 2 on a<br />Handheld Mic Stick</h3>
+          <p class="text-stone-600 italic">
             Ensures clear, crisp sound with<br />
             noise cancellation, giving guests<br />
             that fun "on the mic" experience.
@@ -175,7 +205,7 @@
       
       <div class="max-w-4xl mx-auto p-8 mb-12">
         <h3 class="text-2xl md:text-3xl font-bold mb-6">Inclusions:</h3>
-        <ul class="space-y-3 text-sm md:text-base">
+        <ul class="space-y-3">
           <li class="flex items-start">
             <span class="mr-2">•</span>
             <span><strong>3 hours of unlimited guest video messages</strong></span>
@@ -256,6 +286,46 @@
 
       <!-- footer -->
       <div id="footer-container"></div>
+
+  <!-- carousel for hero section video -->
+  <script>
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('.carousel-slide');
+    const dots = document.querySelectorAll('.dot');
+    const totalSlides = slides.length;
+
+    function showSlide(index) {
+      // Wrap around if index is out of bounds
+      if (index >= totalSlides) {
+        currentIndex = 0;
+      } else if (index < 0) {
+        currentIndex = totalSlides - 1;
+      } else {
+        currentIndex = index;
+      }
+
+      // Remove active class from all slides and dots
+      slides.forEach(slide => slide.classList.remove('active'));
+      dots.forEach(dot => dot.classList.remove('active'));
+
+      // Add active class to current slide and dot
+      slides[currentIndex].classList.add('active');
+      dots[currentIndex].classList.add('active');
+    }
+
+    function changeSlide(direction) {
+      showSlide(currentIndex + direction);
+    }
+
+    function currentSlide(index) {
+      showSlide(index);
+    }
+
+    // Optional: Auto-rotate carousel every 5 seconds
+    setInterval(() => {
+      changeSlide(1);
+    }, 5000);
+  </script>    
 
   <!-- JS -->
   <script src="JS/main.js"></script>
