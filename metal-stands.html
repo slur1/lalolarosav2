@@ -200,8 +200,8 @@
   
           <!-- Product Info -->
           <div class="p-6">
-            <h3 class="font-semibold text-black mb-2">Package A</h3>
-            <p class="text-black  mb-4">₱3,500.00</p>
+            <h3 class="font-semibold text-black mb-2">Elias</h3>
+            <p class="text-2xl font-bold text-black mb-4">₱3,500.00</p>
             <div class="mb-4">
               <p class="text-sm text-black">
                 <span class="font-semibold">Photo Dimensions:</span><br>
@@ -280,7 +280,7 @@
           </div>
   
           <div class="p-6">
-            <h3 class="text-lg font-semibold text-black mb-2">Package B</h3>
+            <h3 class="text-lg font-semibold text-black mb-2">Andres</h3>
             <p class="text-2xl font-bold text-black mb-4">₱5,200.00</p>
             <div class="mb-4">
               <p class="text-sm text-black">
@@ -356,7 +356,7 @@
           </div>
   
           <div class="p-6">
-            <h3 class="text-lg font-semibold text-black mb-2">Package C</h3>
+            <h3 class="text-lg font-semibold text-black mb-2">Leo</h3>
             <p class="text-2xl font-bold text-black mb-4">₱7,800.00</p>
             <div class="mb-4">
               <p class="text-sm text-black">
@@ -432,12 +432,14 @@
             </div>
         
             <!-- Badge -->
-            
+            <div class="absolute top-4 left-4 bg-black text-white px-3 py-1 text-sm font-semibold rounded">
+              Best Seller
+            </div>
           </div>
         
           <!-- Product Info -->
           <div class="p-6">
-            <h3 class="text-lg font-semibold text-black mb-2">Package D</h3>
+            <h3 class="text-lg font-semibold text-black mb-2">Marco</h3>
             <p class="text-2xl font-bold text-black  mb-4">₱7,200.00</p>
             <div class="mb-4">
               <p class="text-sm text-black">
@@ -534,7 +536,7 @@
         
           <!-- Product Info -->
           <div class="p-6">
-            <h3 class="text-lg font-semibold text-black mb-2">Package E</h3>
+            <h3 class="text-lg font-semibold text-black mb-2">Miguel</h3>
             <p class="text-2xl font-bold text-black  mb-4">₱8,500.00</p>
             <div class="mb-4">
               <p class="text-sm text-black">
@@ -562,6 +564,88 @@
             </ul>
           </div>
         </div>
+
+        <!-- Package F Card -->
+        <div class="rounded-lg overflow-hidden">
+          <div class="relative group cursor-pointer" data-product="a">
+            <!-- Main Image -->
+            <img src="assets/images/actual-setup1.jpg" alt="Package A photo 1"
+              class="w-full h-96 object-cover transition-opacity duration-300 group-hover:opacity-0" loading="lazy">
+        
+            <!-- Hover Carousel -->
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div class="relative w-full h-full bg-gray-100">
+                <img src="assets/images/actual-setup2.jpg" alt="Package A carousel image 1"
+                  class="carousel-image w-full h-full object-cover" loading="lazy">
+                <img src="assets/images/actual-setup3.jpg" alt="Package A carousel image 2"
+                  class="carousel-image w-full h-full object-cover hidden" loading="lazy">
+                <img src="assets/images/actual-setup4.jpg" alt="Package A carousel image 3"
+                  class="carousel-image w-full h-full object-cover hidden" loading="lazy">
+        
+                <!-- Carousel Controls -->
+                <div class="absolute inset-0 flex items-center justify-between px-2">
+                  <button class="carousel-prev bg-black/50 hover:bg-black/100 text-white p-2 rounded transition"
+                    aria-label="Previous image">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                  </button>
+                  <button class="carousel-next bg-black/50 hover:bg-black/100 text-white p-2 rounded transition"
+                    aria-label="Next image">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                  </button>
+                </div>
+        
+                <!-- Carousel Dots -->
+                <div class="absolute bottom-3 left-1/2 transform -translate-x-1/2 flex gap-2">
+                  <button class="carousel-dot w-2 h-2 bg-white rounded-full opacity-100 transition"
+                    aria-label="Image 1"></button>
+                  <button class="carousel-dot w-2 h-2 bg-white rounded-full opacity-50 transition"
+                    aria-label="Image 2"></button>
+                  <button class="carousel-dot w-2 h-2 bg-white rounded-full opacity-50 transition"
+                    aria-label="Image 3"></button>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Badge -->
+        
+          </div>
+        
+          <!-- Product Info -->
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-black mb-2">Jose</h3>
+            <p class="text-2xl font-bold text-black  mb-4">₱8,500.00</p>
+            <div class="mb-4">
+              <p class="text-sm text-black">
+                <span class="font-semibold">Photo Dimensions:</span><br>
+                24in x 36in (2ft x 3ft)
+              </p>
+            </div>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2 text-sm text-black">
+                <svg class="w-4 h-4 text-black flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>5pcs High-Quality UV Prints on Board</span>
+              </li>
+              <li class="flex items-start gap-2 text-sm text-black">
+                <svg class="w-4 h-4 text-black flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>5pcs Collapsible Black Metal Stands</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
       </div>
     </div>
 

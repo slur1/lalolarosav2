@@ -172,33 +172,76 @@
         </div>
 
      
-      <div class="text-center mb-12">
-        <p class="text-3xl md:text-4xl font-bold mb-4">
-          Standard Rate: <span class="line-through italic">₱10,000.00</span>
-        </p>
-      </div>
-
-      
-      <div class="mb-12">
-        <h3 class="text-2xl md:text-3xl font-bold text-center mb-8 uppercase">Actual Set-Up</h3>
-        <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-8">
-          <img src="assets/images/actual-setup1.jpg" alt="Setup 1"
-            class="w-full h-64 object-cover rounded-lg shadow-lg" />
-          <img src="assets/images/actual-setup2.jpg" alt="Setup 2"
-            class="w-full h-64 object-cover rounded-lg shadow-lg" />
-          <img src="assets/images/actual-setup3.jpg" alt="Setup 3"
-            class="w-full h-64 object-cover rounded-lg shadow-lg" />
+      <div class="text-center mb-2">
+        <div class="inline-block bg-lola-brown text-white 
+                 px-3 py-3 rounded-full
+                 sm:px-2 sm:py-2
+                 md:px-4 md:py-4">
+          <p class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold italic">
+            PROMO: ₱8,888.00
+          </p>
         </div>
       </div>
 
 
-      <div class="text-center mb-12">
-        <p class="text-lg md:text-xl mb-4 font-serif italic">
-          First <span class="font-bold not-italic">8 lucky clients</span> who book will enjoy
-        </p>
-        <p class="text-base md:text-lg mb-2">our introductory price of</p>
-        <div class="inline-block bg-lola-brown text-white px-8 py-4 rounded-full">
-          <p class="text-3xl md:text-4xl font-bold italic">PROMO: ₱8,888.00</p>
+      
+      <div class="mb-2 py-2">
+      
+        <!-- Carousel Container -->
+        <div class="mb-2 py-2">
+          <h3 class="text-2xl md:text-3xl font-bold text-center mb-2 uppercase">Actual Set-Up</h3>
+        
+          <!-- Carousel Container -->
+          <div class="max-w-2xl mx-auto px-4">
+            <div class="relative bg-white rounded-lg shadow-lg overflow-hidden">
+              <!-- Images Container -->
+              <div class="relative w-full h-64 md:h-96 overflow-hidden">
+                <img src="assets/images/actual-setup1.jpg" alt="Setup 1"
+                  class="carousel-image absolute w-full h-full object-cover transition-opacity duration-500 opacity-100"
+                  data-index="0" />
+                <img src="assets/images/actual-setup2.jpg" alt="Setup 2"
+                  class="carousel-image absolute w-full h-full object-cover transition-opacity duration-500 opacity-0"
+                  data-index="1" />
+                <img src="assets/images/actual-setup3.jpg" alt="Setup 3"
+                  class="carousel-image absolute w-full h-full object-cover transition-opacity duration-500 opacity-0"
+                  data-index="2" />
+              </div>
+        
+              <!-- Previous Button -->
+              <button id="prevBtn"
+                class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full p-2 transition-all z-10"
+                aria-label="Previous image">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+              </button>
+        
+              <!-- Next Button -->
+              <button id="nextBtn"
+                class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full p-2 transition-all z-10"
+                aria-label="Next image">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </button>
+        
+              <!-- Dots Indicator -->
+              <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+                <button class="dot w-2 h-2 rounded-full bg-white/60 hover:bg-white transition-all" data-index="0"
+                  aria-label="Go to image 1"></button>
+                <button class="dot w-2 h-2 rounded-full bg-white/60 hover:bg-white transition-all" data-index="1"
+                  aria-label="Go to image 2"></button>
+                <button class="dot w-2 h-2 rounded-full bg-white/60 hover:bg-white transition-all" data-index="2"
+                  aria-label="Go to image 3"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="text-center mb-2">
+        <p class="text-base md:text-lg mb-2 italic">our introductory price of Until November 14, 2025</p>
         </div>
       </div>
 
@@ -253,30 +296,26 @@
       </div>
 
 
-    <div class="flex justify-center items-center mb-12">
-      <div class="relative">
-        <div
-          class="absolute -top-8 -left-8 bg-amber-800 text-white rounded-full w-20 h-20 flex items-center justify-center font-bold text-lg transform -rotate-12">
-          FREE
-        </div>
-        <div class="p-2 border-10 border-solid">
-          <img src="assets/images/gallery-300x300.png" alt="Free UV Print" class="object-cover" />
-        </div>
-      </div>
-    </div>
-
 
       
       <div class="text-center">
-        <h3 class="text-4xl md:text-5xl font-bold mb-2">
-          <span class="text-lola-brown">BOOK</span> <span class="text-lola-magenta-dark">NOW!</span>
-        </h3>
+
+        <a href="https://www.facebook.com/share/19z6sQuHDy" target="_blank" class="inline-block bg-lola-brown/80 text-white font-bold italic 
+                 text-2xl sm:text-3xl md:text-4xl lg:text-5xl 
+                 px-6 py-3 rounded-full shadow-md hover:bg-lola-brown/100 
+                 transition duration-300 ease-in-out transform hover:scale-105">
+          <span class="text-white">BOOK</span> <span class="text-white">NOW!</span>
+        </a>
+
         <p class="text-xl md:text-2xl font-bold mb-8 italic">We only cater 1 event per day!</p>
 
-        <div class="flex justify-center items-center gap-8 mb-8">
-          <p class="text-2xl md:text-3xl font-bold text-lola-brown">memo<span class="text-lola-magenta-dark">rosa</span></p>
-          <p class="text-3xl md:text-4xl font-script">Video<br />guestbook</p>
+        <div class="flex flex-wrap justify-center items-center gap-6 mb-8">
+          <img src="assets/images/memorosa-video-guestbook.webp" alt="Memorosa logo" class="w-32 sm:w-40 md:w-48 lg:w-56 h-auto" />
+        
+          <img src="assets/images/memorosa-video-guestbook-2.webp" alt="Video Guestbook logo"
+            class="w-32 sm:w-40 md:w-48 lg:w-56 h-auto" />
         </div>
+
 
         <p class="text-md text-stone-500 italic">*Valid only for 2025 - 2026 events!</p>
       </div>
@@ -326,6 +365,69 @@
       changeSlide(1);
     }, 5000);
   </script>    
+
+  <!-- carousel for actual setup section -->
+  <script>
+    let actualIndex = 0;
+      const images = document.querySelectorAll('.carousel-image');
+      const slide = document.querySelectorAll('.dot');
+      const totalImages = images.length;
+      let autoPlayInterval;
+
+      function showImage(index) {
+        // Wrap around
+        actualIndex = (index + totalImages) % totalImages;
+
+        // Update images
+        images.forEach((img, i) => {
+          img.classList.toggle('opacity-100', i === actualIndex);
+          img.classList.toggle('opacity-0', i !== actualIndex);
+        });
+
+        // Update dots
+        slide.forEach((dot, i) => {
+          dot.classList.toggle('bg-white', i === actualIndex);
+          dot.classList.toggle('bg-white/60', i !== actualIndex);
+        });
+      }
+
+      function nextImage() {
+        showImage(actualIndex + 1);
+        resetAutoPlay();
+      }
+
+      function prevImage() {
+        showImage(actualIndex - 1);
+        resetAutoPlay();
+      }
+
+      function autoPlay() {
+        autoPlayInterval = setInterval(() => {
+          showImage(actualIndex + 1);
+        }, 1000);
+      }
+
+      function resetAutoPlay() {
+        clearInterval(autoPlayInterval);
+        autoPlay();
+      }
+
+      // Event listeners
+      document.getElementById('nextBtn').addEventListener('click', nextImage);
+      document.getElementById('prevBtn').addEventListener('click', prevImage);
+
+      dots.forEach(dot => {
+        dot.addEventListener('click', (e) => {
+          const index = parseInt(e.target.dataset.index);
+          showImage(index);
+          resetAutoPlay();
+        });
+      });
+
+      // Initialize
+      showImage(0);
+      autoPlay();
+  </script>
 
   <!-- JS -->
   <script src="JS/main.js"></script>
