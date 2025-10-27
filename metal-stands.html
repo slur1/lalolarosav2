@@ -22,11 +22,9 @@
 
   <!-- hero section -->
   <section class="py-16 px-4 relative overflow-hidden">
-
-
     <div class="container mx-auto relative z-10">
       <div class="flex flex-col lg:flex-row items-center gap-12">
-
+        <!-- Left content -->
         <div class="flex-1 space-y-1">
           <h1 class="text-4xl md:text-5xl lg:text-4xl font-bold text-black leading-tight">
             Metal Stands Collection
@@ -34,19 +32,15 @@
           <p class="text-black leading-relaxed pt-2">
             Display your love story beautifully.
           </p>
-          <p class=" leading-relaxed">
+          <p class="leading-relaxed">
             Crafted to complement your prints and elevate your event
             styling. 🌸
           </p>
-          
-
-
+  
           <div class="grid grid-cols-1 md:grid-cols-2 gap-2 py-4">
             <div class="flex items-start space-x-3">
-
               <div class="flex items-start space-x-2">
-                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"
-                  style="color: black;">
+                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" style="color: black;">
                   <path fill-rule="evenodd"
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                     clip-rule="evenodd" />
@@ -56,9 +50,8 @@
                   <p class="text-black italic">Packages prices at discounted price!</p>
                 </div>
               </div>
-
             </div>
-
+  
             <div class="flex items-start space-x-2">
               <svg class="w-5 h-5 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" style="color: black;">
                 <path fill-rule="evenodd"
@@ -67,10 +60,11 @@
               </svg>
               <div>
                 <h3 class="font-semibold text-black">FREE CARRY BAG</h3>
-                <p class="text-black italic">For your convenience on the day of event (fits stands and 18" x 24" prints)</p>
+                <p class="text-black italic">For your convenience on the day of event (fits stands and 18" x 24" prints)
+                </p>
               </div>
             </div>
-
+  
             <div class="flex items-start space-x-2">
               <svg class="w-5 h-5 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" style="color: black;">
                 <path fill-rule="evenodd"
@@ -82,7 +76,7 @@
                 <p class="text-black italic">Lalamove delivery for Metro Manila & nearby cities</p>
               </div>
             </div>
-
+  
             <div class="flex items-start space-x-2">
               <svg class="w-5 h-5 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" style="color: black;">
                 <path fill-rule="evenodd"
@@ -94,7 +88,7 @@
                 <p class="text-black italic">J&T delivery for nationwide orders (+200 for the box)</p>
               </div>
             </div>
-
+  
             <div class="flex items-start space-x-2">
               <svg class="w-5 h-5 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" style="color: black;">
                 <path fill-rule="evenodd"
@@ -103,11 +97,9 @@
               </svg>
               <div>
                 <h3 class="font-semibold text-black">FREE basic lay-out/editing using Canva Premium</h3>
-                
               </div>
             </div>
-            
-
+  
             <div class="flex items-start space-x-2">
               <svg class="w-5 h-5 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" style="color: black;">
                 <path fill-rule="evenodd"
@@ -116,24 +108,62 @@
               </svg>
               <div>
                 <h3 class="font-semibold text-black">All inclusions are yours to keep!</h3>
-                
               </div>
             </div>
-
-
-
-
           </div>
-
         </div>
-
-
+  
+        <!-- Right carousel -->
         <div class="flex-1 flex justify-center">
-          <div
-            class="rounded-2xl max-w-md transform hover:scale-105 transition-transform duration-300">
-            <img src="assets/images/free-bag.webp"
-              alt="free-bag" class="w-full h-auto rounded-lg" />
-            <p class="text-center mt-4 text-black font-semibold text-xs italic">Fits prints sized 18" x 24" and all metal stands</p>
+          <div class="w-full max-w-md">
+            <!-- Carousel container -->
+            <div class="relative rounded-2xl overflow-hidden">
+              <div class="relative h-96 overflow-hidden">
+                <!-- Carousel images -->
+                <div class="carousel-container relative w-full h-full">
+                  <img src="assets/images/EVERMORE-CAROUSEL-TOP-1.webp" alt="Metal Stand Carousel Image 1"
+                    class="carousel-items absolute w-full h-full object-cover transition-opacity duration-500 opacity-100" />
+                  <img src="assets/images/EVERMORE-CAROUSEL-TOP-2.webp" alt="Metal Stand Carousel Image 2"
+                    class="carousel-items absolute w-full h-full object-cover transition-opacity duration-500 opacity-0" />
+                  <img src="assets/images/EVERMORE-CAROUSEL-TOP-3.webp" alt="Metal Stand Carousel Image 3"
+                    class="carousel-items absolute w-full h-full object-cover transition-opacity duration-500 opacity-0" />
+                  <img src="assets/images/EVERMORE-CAROUSEL-TOP-4.webp" alt="Metal Stand Carousel Image 4"
+                    class="carousel-items absolute w-full h-full object-cover transition-opacity duration-500 opacity-0" />
+                  <img src="assets/images/EVERMORE-CAROUSEL-TOP-5.webp" alt="Metal Stand Carousel Image 5"
+                    class="carousel-items absolute w-full h-full object-cover transition-opacity duration-500 opacity-0" />
+                </div>
+  
+                <!-- Previous button -->
+                <button
+                  class="carousel-image-prev absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-black bg-opacity-50 hover:bg-opacity-75 text-white rounded-full p-2 transition-all">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+  
+                <!-- Next button -->
+                <button
+                  class="carousel-image-next absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-black bg-opacity-50 hover:bg-opacity-75 text-white rounded-full p-2 transition-all">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+  
+              <!-- Carousel indicators -->
+              <div class="flex justify-center gap-2 p-4">
+                <button class="carousel-indicator w-2 h-2 rounded-full bg-black transition-all" data-index="0"></button>
+                <button class="carousel-indicator w-2 h-2 rounded-full bg-gray-300 transition-all"
+                  data-index="1"></button>
+                <button class="carousel-indicator w-2 h-2 rounded-full bg-gray-300 transition-all"
+                  data-index="2"></button>
+                <button class="carousel-indicator w-2 h-2 rounded-full bg-gray-300 transition-all" data-index="3"></button>
+                <button class="carousel-indicator w-2 h-2 rounded-full bg-gray-300 transition-all" data-index="4"></button>
+              </div>
+            </div>
+  
+            <p class="text-center mt-4 text-black font-semibold text-xs italic">Fits prints sized 18" x 24" and all metal
+              stands</p>
           </div>
         </div>
       </div>
@@ -149,19 +179,21 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
         
-        <!-- Package A Card -->
+        <!-- Elias -->
         <div class="rounded-lg overflow-hidden">
-          <div class="relative group cursor-pointer" data-product="a">
+          <div class="relative group cursor-pointer" data-product="elias">
             <!-- Main Image -->
-            <img src="assets/images/package-a-1.webp" alt="Package A photo 1"
+            <img src="assets/images/ELIAS-1.webp" alt="Elias Photo 1"
               class="w-full h-96 object-cover transition-opacity duration-300 group-hover:opacity-0" loading="lazy">
   
             <!-- Hover Carousel -->
             <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <div class="relative w-full h-full bg-gray-100">
-                <img src="assets/images/package-a-2.webp" alt="Package A carousel image 1"
+                <img src="assets/images/ELIAS-1.webp" alt="Elias Carousel Photo 1"
                   class="carousel-image w-full h-full object-cover" loading="lazy">
-                <img src="assets/images/package-a-3.webp" alt="Package A carousel image 2"
+                <img src="assets/images/ELIAS-2.webp" alt="Elias Carousel Photo 2"
+                  class="carousel-image w-full h-full object-cover hidden" loading="lazy">
+                <img src="assets/images/ELIAS-3.webp" alt="Elias Carousel Photo 3"
                   class="carousel-image w-full h-full object-cover hidden" loading="lazy">
   
                 <!-- Carousel Controls -->
@@ -229,21 +261,21 @@
           </div>
         </div>
   
-        <!-- Package B Card -->
+        <!-- Andres -->
         <div class="rounded-lg overflow-hidden">
-          <div class="relative group cursor-pointer" data-product="b">
-            <img src="assets/images/package-b-1.webp" alt="Package B photo 1"
+          <div class="relative group cursor-pointer" data-product="andres">
+            <img src="assets/images/ANDRES-1.webp" alt="Andres Photo 1"
               class="w-full h-96 object-cover transition-opacity duration-300 group-hover:opacity-0" loading="lazy">
   
             <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <div class="relative w-full h-full bg-gray-100">
-                <img src="assets/images/package-b-1.webp" alt="Package B carousel image 1"
+                <img src="assets/images/ANDRES-1.webp" alt="Andres Carousel Photo 1"
                   class="carousel-image w-full h-full object-cover" loading="lazy">
-                <img src="assets/images/package-b-1.webp" alt="Package B carousel image 2"
+                <img src="assets/images/ANDRES-2.webp" alt="Andres Carousel Photo 2"
                   class="carousel-image w-full h-full object-cover hidden" loading="lazy">
-                <img src="assets/images/package-b-1.webp" alt="Package B carousel image 3"
+                <img src="assets/images/ANDRES-3.webp" alt="Andres Carousel Photo 3"
                   class="carousel-image w-full h-full object-cover hidden" loading="lazy">
-                <img src="assets/images/package-b-1.webp" alt="Package B carousel image 4"
+                <img src="assets/images/ANDRES-4.webp" alt="Andres Carousel Photo 4"
                   class="carousel-image w-full h-full object-cover hidden" loading="lazy">
   
                 <div class="absolute inset-0 flex items-center justify-between px-2">
@@ -309,21 +341,27 @@
           </div>
         </div>
   
-        <!-- Package C Card -->
+        <!-- Leo -->
         <div class="rounded-lg overflow-hidden">
-          <div class="relative group cursor-pointer" data-product="c">
-            <img src="assets/images/package-c-1.webp" alt="Package C photo 1"
+          <div class="relative group cursor-pointer" data-product="leo">
+
+            <!-- Main Image -->
+            <img src="assets/images/LEO-1.webp" alt="Leo Photo 1"
               class="w-full h-96 object-cover transition-opacity duration-300 group-hover:opacity-0" loading="lazy">
-  
+
+            <!-- Hover Carousel -->
             <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <div class="relative w-full h-full bg-gray-100">
-                <img src="assets/images/package-c-1.webp" alt="Package C carousel image 1"
+                <img src="assets/images/LEO-1.webp" alt="Leo Carousel Photo 1"
                   class="carousel-image w-full h-full object-cover" loading="lazy">
-                <img src="assets/images/package-c-1.webp" alt="Package C carousel image 2"
+                <img src="assets/images/LEO-2.webp" alt="Leo Carousel Photo 2"
                   class="carousel-image w-full h-full object-cover hidden" loading="lazy">
-                <img src="assets/images/package-c-1.webp" alt="Package C carousel image 3"
+                <img src="assets/images/LEO-3.webp" alt="Leo Carousel Photo 3"
+                  class="carousel-image w-full h-full object-cover hidden" loading="lazy">
+                <img src="assets/images/LEO-4.webp" alt="Leo Carousel Photo 4"
                   class="carousel-image w-full h-full object-cover hidden" loading="lazy">
   
+                <!-- Carousel Controls -->
                 <div class="absolute inset-0 flex items-center justify-between px-2">
                   <button class="carousel-prev bg-black/50 hover:bg-black/100 text-white p-2 rounded transition"
                     aria-label="Previous image">
@@ -338,7 +376,8 @@
                     </svg>
                   </button>
                 </div>
-  
+
+                <!-- Carousel Dots -->
                 <div class="absolute bottom-3 left-1/2 transform -translate-x-1/2 flex gap-2">
                   <button class="carousel-dot w-2 h-2 bg-white rounded-full opacity-100 transition"
                     aria-label="Image 1"></button>
@@ -346,13 +385,17 @@
                     aria-label="Image 2"></button>
                   <button class="carousel-dot w-2 h-2 bg-white rounded-full opacity-50 transition"
                     aria-label="Image 3"></button>
+                  <button class="carousel-dot w-2 h-2 bg-white rounded-full opacity-50 transition"
+                    aria-label="Image 4"></button>
                 </div>
               </div>
             </div>
   
+            <!-- badge -->
             <div class="absolute top-4 left-4 bg-black text-white px-3 py-1 text-sm font-semibold rounded">
               Best Seller
             </div>
+
           </div>
   
           <div class="p-6">
@@ -386,21 +429,23 @@
         </div>
 
 
-        <!-- Package D Card -->
+        <!-- Marco -->
         <div class="rounded-lg overflow-hidden">
-          <div class="relative group cursor-pointer" data-product="a">
+          <div class="relative group cursor-pointer" data-product="marco">
             <!-- Main Image -->
-            <img src="assets/images/actual-setup1.jpg" alt="Package A photo 1"
+            <img src="assets/images/MARCO-1.webp" alt="Marco Photo 1"
               class="w-full h-96 object-cover transition-opacity duration-300 group-hover:opacity-0" loading="lazy">
         
             <!-- Hover Carousel -->
             <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <div class="relative w-full h-full bg-gray-100">
-                <img src="assets/images/actual-setup2.jpg" alt="Package A carousel image 1"
+                <img src="assets/images/MARCO-1.webp" alt="Marco Carousel Photo 1"
                   class="carousel-image w-full h-full object-cover" loading="lazy">
-                <img src="assets/images/actual-setup3.jpg" alt="Package A carousel image 2"
+                <img src="assets/images/MARCO-2.webp" alt="Marco Carousel Photo 2"
                   class="carousel-image w-full h-full object-cover hidden" loading="lazy">
-                <img src="assets/images/actual-setup4.jpg" alt="Package A carousel image 3"
+                <img src="assets/images/MARCO-3.webp" alt="Marco Carousel Photo 3"
+                  class="carousel-image w-full h-full object-cover hidden" loading="lazy">
+                <img src="assets/images/MARCO-4.webp" alt="Marco Carousel Photo 4"
                   class="carousel-image w-full h-full object-cover hidden" loading="lazy">
         
                 <!-- Carousel Controls -->
@@ -427,6 +472,7 @@
                     aria-label="Image 2"></button>
                   <button class="carousel-dot w-2 h-2 bg-white rounded-full opacity-50 transition"
                     aria-label="Image 3"></button>
+                  <button class="carousel-dot w-2 h-2 bg-white rounded-full opacity-50 transition" aria-label="Image 4"></button>
                 </div>
               </div>
             </div>
@@ -485,21 +531,19 @@
         </div>
 
 
-        <!-- Package E Card -->
+        <!-- Miguel -->
         <div class="rounded-lg overflow-hidden">
-          <div class="relative group cursor-pointer" data-product="a">
+          <div class="relative group cursor-pointer" data-product="miguel">
             <!-- Main Image -->
-            <img src="assets/images/actual-setup1.jpg" alt="Package A photo 1"
+            <img src="assets/images/MIGUEL-1.webp" alt="Miguel Photo 1"
               class="w-full h-96 object-cover transition-opacity duration-300 group-hover:opacity-0" loading="lazy">
         
             <!-- Hover Carousel -->
             <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <div class="relative w-full h-full bg-gray-100">
-                <img src="assets/images/actual-setup2.jpg" alt="Package A carousel image 1"
+                <img src="assets/images/MIGUEL-1.webp" alt="Miguel Carousel Photo 1"
                   class="carousel-image w-full h-full object-cover" loading="lazy">
-                <img src="assets/images/actual-setup3.jpg" alt="Package A carousel image 2"
-                  class="carousel-image w-full h-full object-cover hidden" loading="lazy">
-                <img src="assets/images/actual-setup4.jpg" alt="Package A carousel image 3"
+                <img src="assets/images/MIGUEL-2.webp" alt="Miguel Carousel Photo 2"
                   class="carousel-image w-full h-full object-cover hidden" loading="lazy">
         
                 <!-- Carousel Controls -->
@@ -524,8 +568,6 @@
                     aria-label="Image 1"></button>
                   <button class="carousel-dot w-2 h-2 bg-white rounded-full opacity-50 transition"
                     aria-label="Image 2"></button>
-                  <button class="carousel-dot w-2 h-2 bg-white rounded-full opacity-50 transition"
-                    aria-label="Image 3"></button>
                 </div>
               </div>
             </div>
@@ -565,21 +607,19 @@
           </div>
         </div>
 
-        <!-- Package F Card -->
+        <!-- Jose -->
         <div class="rounded-lg overflow-hidden">
-          <div class="relative group cursor-pointer" data-product="a">
+          <div class="relative group cursor-pointer" data-product="jose">
             <!-- Main Image -->
-            <img src="assets/images/actual-setup1.jpg" alt="Package A photo 1"
+            <img src="assets/images/JOSE-1.webp" alt="Jose Photo 1"
               class="w-full h-96 object-cover transition-opacity duration-300 group-hover:opacity-0" loading="lazy">
         
             <!-- Hover Carousel -->
             <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <div class="relative w-full h-full bg-gray-100">
-                <img src="assets/images/actual-setup2.jpg" alt="Package A carousel image 1"
+                <img src="assets/images/JOSE-1.webp" alt="Jose Carousel Photo 1"
                   class="carousel-image w-full h-full object-cover" loading="lazy">
-                <img src="assets/images/actual-setup3.jpg" alt="Package A carousel image 2"
-                  class="carousel-image w-full h-full object-cover hidden" loading="lazy">
-                <img src="assets/images/actual-setup4.jpg" alt="Package A carousel image 3"
+                <img src="assets/images/JOSE-2.webp" alt="Jose Carousel Photo 2"
                   class="carousel-image w-full h-full object-cover hidden" loading="lazy">
         
                 <!-- Carousel Controls -->
@@ -604,8 +644,6 @@
                     aria-label="Image 1"></button>
                   <button class="carousel-dot w-2 h-2 bg-white rounded-full opacity-50 transition"
                     aria-label="Image 2"></button>
-                  <button class="carousel-dot w-2 h-2 bg-white rounded-full opacity-50 transition"
-                    aria-label="Image 3"></button>
                 </div>
               </div>
             </div>
@@ -659,9 +697,11 @@
   </div>
 
   <!-- Modal Lightbox -->
+  
+  <!-- Modal Lightbox -->
   <div id="modal" class="hidden fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4" role="dialog"
     aria-modal="true" aria-labelledby="modal-title">
-    <div class="relative bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-hidden">
+    <div class="relative bg-black rounded-lg max-w-3xl w-full aspect-square overflow-hidden">
       <!-- Close Button -->
       <button id="modal-close"
         class="absolute top-4 right-4 bg-black/50 hover:bg-black/100 text-white p-2 rounded-full z-10"
@@ -672,12 +712,10 @@
       </button>
   
       <!-- Modal Carousel -->
-      <div class="relative w-full h-96 bg-gray-100 overflow-hidden">
-        <div id="modal-carousel" class="relative w-full h-full">
-
-        </div>
+      <div class="relative w-full aspect-square bg-black overflow-hidden flex items-center justify-center">
+        <div id="modal-carousel" class="relative w-full h-full"></div>
   
-        <!-- Modal Controls -->
+        <!-- Controls -->
         <div class="absolute inset-0 flex items-center justify-between px-4">
           <button id="modal-prev" class="bg-black/50 hover:bg-black/100 text-white p-3 rounded transition"
             aria-label="Previous image">
@@ -693,58 +731,137 @@
           </button>
         </div>
   
-        <!-- Modal Dots -->
-        <div id="modal-dots" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
-  
-        </div>
+        <!-- Dots -->
+        <div id="modal-dots" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2"></div>
       </div>
     </div>
   </div>
 
-      <!-- footer -->
-      <div id="footer-container"></div>
 
+<!-- footer -->
+<div id="footer-container"></div>
+
+
+<!-- metal hero carousel js-->
+<script>
+        let imageCurrentIndex = 0;
+        const items = document.querySelectorAll('.carousel-items');
+        const indicators = document.querySelectorAll('.carousel-indicator');
+        const totalItems = items.length;
+        let autoPlayInterval;
+
+       
+
+
+        function showSlide(imageIndex) {
+          // Wrap around
+          if (imageIndex >= totalItems) imageCurrentIndex = 0;
+          if (imageIndex < 0) imageCurrentIndex = totalItems - 1;
+
+          // Update carousel items
+          items.forEach((item, i) => {
+            item.classList.toggle('opacity-100', i === imageCurrentIndex);
+            item.classList.toggle('opacity-0', i !== imageCurrentIndex);
+          });
+
+          // Update indicators
+          indicators.forEach((indicator, i) => {
+            indicator.classList.toggle('bg-black', i === imageCurrentIndex);
+            indicator.classList.toggle('bg-gray-300', i !== imageCurrentIndex);
+          });
+        }
+
+        function nextSlide() {
+          imageCurrentIndex++;
+          showSlide(imageCurrentIndex);
+          resetAutoPlay();
+        }
+
+        function prevSlide() {
+          imageCurrentIndex--;
+          showSlide(imageCurrentIndex);
+          resetAutoPlay();
+        }
+
+        function autoPlay() {
+          autoPlayInterval = setInterval(() => {
+            imageCurrentIndex++;
+            showSlide(imageCurrentIndex);
+          }, 3000);
+        }
+
+        function resetAutoPlay() {
+          clearInterval(autoPlayInterval);
+          autoPlay();
+        }
+
+        // Event listeners
+        document.querySelector('.carousel-image-next').addEventListener('click', nextSlide);
+        document.querySelector('.carousel-image-prev').addEventListener('click', prevSlide);
+
+        indicators.forEach((indicator, imageIndex) => {
+          indicator.addEventListener('click', () => {
+            imageCurrentIndex = imageIndex;
+            showSlide(imageCurrentIndex);
+            resetAutoPlay();
+          });
+        });
+
+        // Start auto-play
+        autoPlay();
+</script>
+
+<!-- img carousel js -->
 <script>
   // Product data
   const products = {
-    a: {
-      title: 'Package A',
+    elias: {
+      title: 'Elias',
       images: [
-        'assets/images/package-a-1.webp',
-        'assets/images/package-a-2.webp',
-        'assets/images/package-a-3.webp'
+        'assets/images/ELIAS-1.webp',
+        'assets/images/ELIAS-2.webp',
+        'assets/images/ELIAS-3.webp'
       ]
     },
-    b: {
-      title: 'Package B',
+    andres: {
+      title: 'Andres',
       images: [
-        'assets/images/package-b-1.webp',
-        'assets/images/package-b-1.webp',
-        'assets/images/package-b-1.webp'
+        'assets/images/ANDRES-1.webp',
+        'assets/images/ANDRES-2.webp',
+        'assets/images/ANDRES-3.webp',
+        'assets/images/ANDRES-4.webp'
       ]
     },
-    c: {
-      title: 'Package C',
+    leo: {
+      title: 'Leo',
       images: [
-        'assets/images/package-c-1.webp',
-        'assets/images/package-c-1.webp',
-        'assets/images/package-c-1.webp'
+        'assets/images/LEO-1.webp',
+        'assets/images/LEO-2.webp',
+        'assets/images/LEO-3.webp',
+        'assets/images/LEO-4.webp'
       ]
     },
-    d: {
-      title: 'Package d',
+    marco: {
+      title: 'Marco',
       images: [
-        'assets/images/actual-setup1.jpg',
-        'assets/images/actual-setup2.jpg',
-        'assets/images/actual-setup3.jpg'
+        'assets/images/MARCO-1.webp',
+        'assets/images/MARCO-2.webp',
+        'assets/images/MARCO-3.webp',
+        'assets/images/MARCO-4.webp'
       ]
     },
-    e: {
-      title: 'Package e',
+    miguel: {
+      title: 'Miguel',
       images: [
-        'assets/images/actual-setup1.jpg',
-        'assets/images/actual-setup2.jpg',
-        'assets/images/actual-setup3.jpg'
+        'assets/images/MIGUEL-1.webp',
+        'assets/images/MIGUEL-2.webp'
+      ]
+    },
+    jose: {
+      title: 'Jose',
+      images: [
+        'assets/images/JOSE-1.webp',
+        'assets/images/JOSE-2.webp'
       ]
     }
   };
@@ -815,7 +932,8 @@
       const imgEl = document.createElement('img');
       imgEl.src = img;
       imgEl.alt = `${product.title} image ${index + 1}`;
-      imgEl.className = `absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${index === 0 ? '' : 'opacity-0 pointer-events-none'}`;
+      imgEl.className = `absolute inset-0 w-full h-full object-contain bg-black transition-opacity duration-300 ${index === 0 ? '' : 'opacity-0 pointer-events-none'}`;
+
       imgEl.loading = 'lazy';
       modalCarousel.appendChild(imgEl);
     });
