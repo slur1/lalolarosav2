@@ -12,6 +12,35 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <script src="JS/tailwind-config.js"></script>
   <link rel="stylesheet" href="CSS/styles.css">
+    <style>
+      .carousel-items {
+        animation: fadeOut 0.5s ease-in-out;
+      }
+    
+      .carousel-items.active {
+        animation: fadeIn 0.5s ease-in-out;
+      }
+    
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+    
+        to {
+          opacity: 1;
+        }
+      }
+    
+      @keyframes fadeOut {
+        from {
+          opacity: 1;
+        }
+    
+        to {
+          opacity: 0;
+        }
+      }
+    </style>
 </head>
 
 <body class="text-xs sm:text-sm md:text-base lg:text-lg bg-lola-beige bg-hero-bg bg-cover bg-fixed bg-center min-h-screen pt-10">
@@ -20,155 +49,163 @@
 <!-- Top Contact Bar -->
 <div id="navbar-container"></div>
 
-  <!-- hero section -->
-  <section class="py-16 px-4 relative overflow-hidden">
-    <div class="container mx-auto relative z-10">
-      <div class="flex flex-col lg:flex-row items-center gap-12">
-        <!-- Left content -->
-        <div class="flex-1 space-y-1">
-          <h1 class="text-4xl md:text-5xl lg:text-4xl font-bold text-black leading-tight">
-            Metal Stands Collection
-          </h1>
-          <p class="text-black leading-relaxed pt-2">
-            Display your love story beautifully.
-          </p>
-          <p class="leading-relaxed">
-            Crafted to complement your prints and elevate your event
-            styling. 🌸
-          </p>
-  
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-2 py-4">
-            <div class="flex items-start space-x-3">
-              <div class="flex items-start space-x-2">
-                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" style="color: black;">
-                  <path fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                    clip-rule="evenodd" />
-                </svg>
-                <div>
-                  <h3 class="font-semibold text-black">Affordable</h3>
-                  <p class="text-black italic">Packages prices at discounted price!</p>
+<!-- Hero section -->
+    <section class="py-16 px-2">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+    
+          <!-- Left: Text Content -->
+          <div class="space-y-2">
+            <h1 class="text-4xl md:text-5xl font-bold text-black leading-tight">
+              Metal Stands Collection
+            </h1>
+    
+            <p class="text-gray-700">
+              Sleek metal frames that give your photos a modern, timeless touch — designed to showcase your love story with
+              elegance and simplicity. Each set includes a FREE carry bag that fits all stands and 18" x 24" prints, making
+              transport and setup effortless.
+            </p>
+    
+            <div>
+              <h3 class="font-bold text-black">🌿 What's Included</h3>
+              <p class="text-gray-700 italic mb-2">Everything you need to showcase your story beautifully:</p>
+    
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                <!-- Feature 1 -->
+                <div class="flex gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 text-black mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  <div>
+                    <h4 class="font-semibold text-black">Affordable Packages</h4>
+                    <p class="text-gray-700 italic">Enjoy beautifully curated display sets at special discounted
+                      prices.</p>
+                  </div>
+                </div>
+    
+                <!-- Feature 2 -->
+                <div class="flex gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 text-black mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  <div>
+                    <h4 class="font-semibold text-black">FREE CARRY BAG</h4>
+                    <p class="text-gray-700 italic">Fits all stands and 18" × 24" prints for easy transport.</p>
+                  </div>
+                </div>
+    
+                <!-- Feature 3 -->
+                <div class="flex gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 text-black mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  <div>
+                    <h4 class="font-semibold text-black">Metro Manila Delivery</h4>
+                    <p class="text-gray-700 italic">Delivered via Lalamove for a smooth experience.</p>
+                  </div>
+                </div>
+    
+                <!-- Feature 4 -->
+                <div class="flex gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 text-black mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  <div>
+                    <h4 class="font-semibold text-black">Nationwide Delivery</h4>
+                    <p class="text-gray-700 italic">Ship anywhere in the Philippines via J&T Express.</p>
+                  </div>
+                </div>
+    
+                <!-- Feature 5 -->
+                <div class="flex gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 text-black mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  <div>
+                    <h4 class="font-semibold text-black">Creative Design Service</h4>
+                    <p class="text-gray-700 italic">FREE basic layout and editing using Canva Premium.</p>
+                  </div>
+                </div>
+    
+                <!-- Feature 6 -->
+                <div class="flex gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 text-black mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  <div>
+                    <h4 class="font-semibold text-black">All Yours to Keep!</h4>
+                    <p class="text-gray-700 italic">A lasting keepsake from your special day. 🌸</p>
+                  </div>
                 </div>
               </div>
             </div>
-  
-            <div class="flex items-start space-x-2">
-              <svg class="w-5 h-5 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" style="color: black;">
-                <path fill-rule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clip-rule="evenodd" />
-              </svg>
-              <div>
-                <h3 class="font-semibold text-black">FREE CARRY BAG</h3>
-                <p class="text-black italic">For your convenience on the day of event (fits stands and 18" x 24" prints)
-                </p>
-              </div>
-            </div>
-  
-            <div class="flex items-start space-x-2">
-              <svg class="w-5 h-5 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" style="color: black;">
-                <path fill-rule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clip-rule="evenodd" />
-              </svg>
-              <div>
-                <h3 class="font-semibold text-black">Lalamove Delivery Metro Manila</h3>
-                <p class="text-black italic">Lalamove delivery for Metro Manila & nearby cities</p>
-              </div>
-            </div>
-  
-            <div class="flex items-start space-x-2">
-              <svg class="w-5 h-5 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" style="color: black;">
-                <path fill-rule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clip-rule="evenodd" />
-              </svg>
-              <div>
-                <h3 class="font-semibold text-black">Nationwide delivery</h3>
-                <p class="text-black italic">J&T delivery for nationwide orders (+200 for the box)</p>
-              </div>
-            </div>
-  
-            <div class="flex items-start space-x-2">
-              <svg class="w-5 h-5 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" style="color: black;">
-                <path fill-rule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clip-rule="evenodd" />
-              </svg>
-              <div>
-                <h3 class="font-semibold text-black">FREE basic lay-out/editing using Canva Premium</h3>
-              </div>
-            </div>
-  
-            <div class="flex items-start space-x-2">
-              <svg class="w-5 h-5 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" style="color: black;">
-                <path fill-rule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clip-rule="evenodd" />
-              </svg>
-              <div>
-                <h3 class="font-semibold text-black">All inclusions are yours to keep!</h3>
-              </div>
-            </div>
           </div>
-        </div>
-  
-        <!-- Right carousel -->
-        <div class="flex-1 flex justify-center">
-          <div class="w-full max-w-md">
-            <!-- Carousel container -->
-            <div class="relative rounded-2xl overflow-hidden">
-              <div class="relative h-96 overflow-hidden">
-                <!-- Carousel images -->
-                <div class="carousel-container relative w-full h-full">
-                  <img src="assets/images/EVERMORE-CAROUSEL-TOP-1.webp" alt="Metal Stand Carousel Image 1"
-                    class="carousel-items absolute w-full h-full object-cover transition-opacity duration-500 opacity-100" />
-                  <img src="assets/images/EVERMORE-CAROUSEL-TOP-2.webp" alt="Metal Stand Carousel Image 2"
-                    class="carousel-items absolute w-full h-full object-cover transition-opacity duration-500 opacity-0" />
-                  <img src="assets/images/EVERMORE-CAROUSEL-TOP-3.webp" alt="Metal Stand Carousel Image 3"
-                    class="carousel-items absolute w-full h-full object-cover transition-opacity duration-500 opacity-0" />
-                  <img src="assets/images/EVERMORE-CAROUSEL-TOP-4.webp" alt="Metal Stand Carousel Image 4"
-                    class="carousel-items absolute w-full h-full object-cover transition-opacity duration-500 opacity-0" />
-                  <img src="assets/images/EVERMORE-CAROUSEL-TOP-5.webp" alt="Metal Stand Carousel Image 5"
-                    class="carousel-items absolute w-full h-full object-cover transition-opacity duration-500 opacity-0" />
+    
+          <!-- Right carousel -->
+          <div class="flex-1 flex justify-center">
+            <div class="w-full max-w-md">
+              <!-- Carousel container -->
+              <div class="relative rounded-2xl overflow-hidden">
+                <div class="relative h-96 overflow-hidden">
+                  <!-- Carousel images -->
+                  <div class="carousel-container relative w-full h-full">
+                    <img src="assets/images/EVERMORE-CAROUSEL-TOP-1.webp" alt="Metal Stand Carousel Image 1"
+                      class="carousel-items absolute w-full h-full object-cover transition-opacity duration-500 opacity-100" />
+                    <img src="assets/images/EVERMORE-CAROUSEL-TOP-2.webp" alt="Metal Stand Carousel Image 2"
+                      class="carousel-items absolute w-full h-full object-cover transition-opacity duration-500 opacity-0" />
+                    <img src="assets/images/EVERMORE-CAROUSEL-TOP-3.webp" alt="Metal Stand Carousel Image 3"
+                      class="carousel-items absolute w-full h-full object-cover transition-opacity duration-500 opacity-0" />
+                    <img src="assets/images/EVERMORE-CAROUSEL-TOP-4.webp" alt="Metal Stand Carousel Image 4"
+                      class="carousel-items absolute w-full h-full object-cover transition-opacity duration-500 opacity-0" />
+                    <img src="assets/images/EVERMORE-CAROUSEL-TOP-5.webp" alt="Metal Stand Carousel Image 5"
+                      class="carousel-items absolute w-full h-full object-cover transition-opacity duration-500 opacity-0" />
+                  </div>
+          
+                  <!-- Previous button -->
+                  <button
+                    class="carousel-image-prev absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-black bg-opacity-50 hover:bg-opacity-75 text-white rounded-full p-2 transition-all">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                  </button>
+          
+                  <!-- Next button -->
+                  <button
+                    class="carousel-image-next absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-black bg-opacity-50 hover:bg-opacity-75 text-white rounded-full p-2 transition-all">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </button>
                 </div>
-  
-                <!-- Previous button -->
-                <button
-                  class="carousel-image-prev absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-black bg-opacity-50 hover:bg-opacity-75 text-white rounded-full p-2 transition-all">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                  </svg>
-                </button>
-  
-                <!-- Next button -->
-                <button
-                  class="carousel-image-next absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-black bg-opacity-50 hover:bg-opacity-75 text-white rounded-full p-2 transition-all">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                  </svg>
-                </button>
+          
+                <!-- Carousel indicators -->
+                <div class="flex justify-center gap-2 p-4">
+                  <button class="carousel-indicator w-2 h-2 rounded-full bg-black transition-all" data-index="0"></button>
+                  <button class="carousel-indicator w-2 h-2 rounded-full bg-gray-300 transition-all" data-index="1"></button>
+                  <button class="carousel-indicator w-2 h-2 rounded-full bg-gray-300 transition-all" data-index="2"></button>
+                  <button class="carousel-indicator w-2 h-2 rounded-full bg-gray-300 transition-all" data-index="3"></button>
+                  <button class="carousel-indicator w-2 h-2 rounded-full bg-gray-300 transition-all" data-index="4"></button>
+                </div>
               </div>
-  
-              <!-- Carousel indicators -->
-              <div class="flex justify-center gap-2 p-4">
-                <button class="carousel-indicator w-2 h-2 rounded-full bg-black transition-all" data-index="0"></button>
-                <button class="carousel-indicator w-2 h-2 rounded-full bg-gray-300 transition-all"
-                  data-index="1"></button>
-                <button class="carousel-indicator w-2 h-2 rounded-full bg-gray-300 transition-all"
-                  data-index="2"></button>
-                <button class="carousel-indicator w-2 h-2 rounded-full bg-gray-300 transition-all" data-index="3"></button>
-                <button class="carousel-indicator w-2 h-2 rounded-full bg-gray-300 transition-all" data-index="4"></button>
-              </div>
+          
+              <p class="text-center mt-4 text-black font-semibold text-xs italic">Fits prints sized 18" x 24" and all metal
+                stands</p>
             </div>
-  
-            <p class="text-center mt-4 text-black font-semibold text-xs italic">Fits prints sized 18" x 24" and all metal
-              stands</p>
-          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
   <!-- main content -->
   <div class="min-h-screen py-12 px-4 sm:px-6 lg:px-8 fade-in-up">
@@ -744,71 +781,71 @@
 
 <!-- metal hero carousel js-->
 <script>
-        let imageCurrentIndex = 0;
-        const items = document.querySelectorAll('.carousel-items');
-        const indicators = document.querySelectorAll('.carousel-indicator');
-        const totalItems = items.length;
-        let autoPlayInterval;
-
-       
+  let imageCurrentIndex = 0;
+  const items = document.querySelectorAll('.carousel-items');
+  const indicators = document.querySelectorAll('.carousel-indicator');
+  const totalItems = items.length;
+  let autoPlayInterval;
 
 
-        function showSlide(imageIndex) {
-          // Wrap around
-          if (imageIndex >= totalItems) imageCurrentIndex = 0;
-          if (imageIndex < 0) imageCurrentIndex = totalItems - 1;
 
-          // Update carousel items
-          items.forEach((item, i) => {
-            item.classList.toggle('opacity-100', i === imageCurrentIndex);
-            item.classList.toggle('opacity-0', i !== imageCurrentIndex);
-          });
 
-          // Update indicators
-          indicators.forEach((indicator, i) => {
-            indicator.classList.toggle('bg-black', i === imageCurrentIndex);
-            indicator.classList.toggle('bg-gray-300', i !== imageCurrentIndex);
-          });
-        }
+  function showSlide(imageIndex) {
+    // Wrap around
+    if (imageIndex >= totalItems) imageCurrentIndex = 0;
+    if (imageIndex < 0) imageCurrentIndex = totalItems - 1;
 
-        function nextSlide() {
-          imageCurrentIndex++;
-          showSlide(imageCurrentIndex);
-          resetAutoPlay();
-        }
+    // Update carousel items
+    items.forEach((item, i) => {
+      item.classList.toggle('opacity-100', i === imageCurrentIndex);
+      item.classList.toggle('opacity-0', i !== imageCurrentIndex);
+    });
 
-        function prevSlide() {
-          imageCurrentIndex--;
-          showSlide(imageCurrentIndex);
-          resetAutoPlay();
-        }
+    // Update indicators
+    indicators.forEach((indicator, i) => {
+      indicator.classList.toggle('bg-black', i === imageCurrentIndex);
+      indicator.classList.toggle('bg-gray-300', i !== imageCurrentIndex);
+    });
+  }
 
-        function autoPlay() {
-          autoPlayInterval = setInterval(() => {
-            imageCurrentIndex++;
-            showSlide(imageCurrentIndex);
-          }, 3000);
-        }
+  function nextSlide() {
+    imageCurrentIndex++;
+    showSlide(imageCurrentIndex);
+    resetAutoPlay();
+  }
 
-        function resetAutoPlay() {
-          clearInterval(autoPlayInterval);
-          autoPlay();
-        }
+  function prevSlide() {
+    imageCurrentIndex--;
+    showSlide(imageCurrentIndex);
+    resetAutoPlay();
+  }
 
-        // Event listeners
-        document.querySelector('.carousel-image-next').addEventListener('click', nextSlide);
-        document.querySelector('.carousel-image-prev').addEventListener('click', prevSlide);
+  function autoPlay() {
+    autoPlayInterval = setInterval(() => {
+      imageCurrentIndex++;
+      showSlide(imageCurrentIndex);
+    }, 3000);
+  }
 
-        indicators.forEach((indicator, imageIndex) => {
-          indicator.addEventListener('click', () => {
-            imageCurrentIndex = imageIndex;
-            showSlide(imageCurrentIndex);
-            resetAutoPlay();
-          });
-        });
+  function resetAutoPlay() {
+    clearInterval(autoPlayInterval);
+    autoPlay();
+  }
 
-        // Start auto-play
-        autoPlay();
+  // Event listeners
+  document.querySelector('.carousel-image-next').addEventListener('click', nextSlide);
+  document.querySelector('.carousel-image-prev').addEventListener('click', prevSlide);
+
+  indicators.forEach((indicator, imageIndex) => {
+    indicator.addEventListener('click', () => {
+      imageCurrentIndex = imageIndex;
+      showSlide(imageCurrentIndex);
+      resetAutoPlay();
+    });
+  });
+
+  // Start auto-play
+  autoPlay();
 </script>
 
 <!-- img carousel js -->
