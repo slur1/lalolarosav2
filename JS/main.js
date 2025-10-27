@@ -9,14 +9,14 @@ async function loadComponent(elementId, filePath) {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  loadComponent('navbar-container', '../components/navbar.html')
+  loadComponent('navbar-container', 'components/navbar.html')
     .then(() => {
       const script = document.createElement('script');
       script.src = 'js/navbar.js';
       document.body.appendChild(script);
     });
   
-  loadComponent('footer-container', '../components/footer.html')
+  loadComponent('footer-container', 'components/footer.html')
     .then(() => {
       const script = document.createElement('script');
       script.src = 'js/footer.js';
