@@ -106,9 +106,8 @@
 <section id="products" class="py-20 px-4 sm:px-6 lg:px-8 fade-in-up">
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-16">
-      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Our Featured Services</h2>
-      <p class="text-lg text-gray-600 max-w-2xl mx-auto">Discover our most popular products designed to make your
-        events unforgettable</p>
+      <h2 class="text-3xl sm:text-4xl font-bold text-lola-magenta-dark mb-4">What we do</h2>
+      <p class="text-lg text-lola-teal max-w-2xl mx-auto">From prints to video guestbooks - crafted to make your celebration unforgettable</p>
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -117,9 +116,12 @@
       <div id="video-booth" class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
         <img src="assets/images/VIDEO-GUEST-BOOK.webp" alt="State-of-the-art video booth with professional lighting"
           class="w-full h-64 object-cover" />
-        <div class="p-6">
-          <h3 class="font-bold text-gray-900 mb-2">Video Guest Booth <span class="text-lola-brown">memo</span><span class="text-lola-magenta-dark">rosa</span></h3>
-          <p class="text-gray-600 mb-4">State-of-the-art video booth services with professional lighting and instant
+        <div class="p-6 flex flex-col items-start">
+        
+          <!-- Logo above H3 -->
+          <img src="assets/images/memorosa-video-guestbook-hp.webp" alt="Logo" class="w-50 h-12 mb-2" />
+          <h3 class="font-bold text-gray-900 mb-2 italic">Video Guestbook</h3>
+          <p class="text-lola-brown mb-4">State-of-the-art video booth services with professional lighting and instant
             sharing capabilities.</p>
           <a href="video.html" class="text-lola-magenta font-semibold hover:text-lola-magenta-dark inline-flex items-center gap-1">
             Learn more
@@ -134,9 +136,12 @@
       <div id="stands-metal" class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
         <img src="assets/images/WOODEN-STANDS.webp" alt="Premium metal display stand with sleek modern design"
           class="w-full h-64 object-cover" />
-        <div class="p-6">
-          <h3 class="font-bold text-gray-900 mb-2">Wooden Stands</h3>
-          <p class="text-gray-600 mb-4">High-quality wooden stands built to last. Perfect for professional events and
+        <div class="p-6 flex flex-col items-start">
+        
+          <!-- Logo above H3 -->
+          <img src="assets/images/V&V-Wooden-Stands.webp" alt="Logo" class="w-48 h-24 mb-2" />
+          <h3 class="font-bold text-gray-900 mb-2 italic">Wooden Stands Collection</h3>
+          <p class="text-lola-brown mb-4">High-quality wooden stands built to last. Perfect for professional events and
             exhibitions with a modern aesthetic.</p>
           <a href="wooden-stands.html"
             class="text-lola-magenta font-semibold hover:text-lola-lola-magenta-dark inline-flex items-center gap-1">
@@ -152,9 +157,13 @@
       <div id="stands-metal" class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
         <img src="assets/images/METAL-STANDS.webp" alt="Elegant wooden display stand with natural finish"
           class="w-full h-64 object-cover" />
-        <div class="p-6">
-          <h3 class="font-bold text-gray-900 mb-2">Metal Stands</h3>
-          <p class="text-gray-600 mb-4">Handcrafted metal stands with natural elegance. Ideal for rustic and
+        <div class="p-6 flex flex-col items-start">
+      
+          <!-- Logo above H3 -->
+          <img src="assets/images/NEW-LOGO-METAL-STANDS-HP.webp" alt="Logo" class="w-50 h-12 mb-2" />
+      
+          <h3 class="font-bold text-gray-900 mb-2 italic">Metal Stands Collection</h3>
+          <p class="text-lola-brown mb-4">Handcrafted metal stands with natural elegance. Ideal for rustic and
             sophisticated event themes.</p>
           <a href="metal-stands.html"
             class="text-lola-magenta font-semibold hover:text-lola-lola-magenta-dark inline-flex items-center gap-1">
@@ -167,13 +176,17 @@
       </div>
 
 
+
       <!--4th card-->
       <div id="stands-metal-2" class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
         <img src="assets/images/PRINT-ONLY.webp" alt="Premium metal display stand with sleek modern design"
           class="w-full h-64 object-cover" />
-        <div class="p-6">
-          <h3 class="font-bold text-gray-900 mb-2">Picture Packages</h3>
-          <p class="text-gray-600 mb-4">High-quality UV prints. Perfect for professional events and
+        <div class="p-6 flex flex-col items-start">
+        
+          <!-- Logo above H3 -->
+          <img src="assets/images/Prints-Only-HP.webp" alt="Logo" class="w-50 h-12 mb-2" />
+          <h3 class="font-bold text-gray-900 mb-2 italic">Print Only</h3>
+          <p class="text-lola-brown mb-4">High-quality UV prints. Perfect for professional events and
             exhibitions with a modern aesthetic.</p>
           <a href="uv-prints.html"
             class="text-lola-magenta font-semibold hover:text-lola-magenta-dark inline-flex items-center gap-1">
@@ -290,6 +303,7 @@
               </svg>
             </button>
             <div class="carousel-dots flex gap-2"></div>
+
             <button
               class="next-btn p-2 rounded-full bg-lola-magenta text-white hover:bg-lola-magenta-dark transition-colors"
               aria-label="Next testimonial">
@@ -684,7 +698,7 @@
 
           dots.forEach((dot, index) => {
             if (index === currentIndex) {
-              dot.className = 'w-6 h-2 rounded-full bg-lola-magenta transition-all';
+              dot.className = 'w-4 h-4 rounded-full bg-lola-magenta transition-all';
             } else {
               dot.className = 'w-2 h-2 rounded-full bg-gray-300 transition-all';
             }
