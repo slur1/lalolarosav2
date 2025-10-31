@@ -173,6 +173,9 @@
 
      
       <div class="text-center mb-2">
+        <p class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold italic mb-2">
+          Standard Rate: ₱10,000
+        </p>
         <div class="inline-block bg-lola-brown text-white 
                  px-3 py-3 rounded-full
                  sm:px-2 sm:py-2
@@ -181,6 +184,9 @@
             PROMO: ₱8,888.00
           </p>
         </div>
+        <p class="text-md italic">
+          extended promo until November 14, 2025
+        </p>
       </div>
 
 
@@ -240,10 +246,8 @@
       </div>
 
 
-      <div class="text-center mb-2">
-        <p class="text-base md:text-lg mb-2 italic">our introductory price of Until November 14, 2025</p>
-        </div>
-      </div>
+      
+
 
       
       <div class="max-w-4xl mx-auto p-8 mb-12">
@@ -334,7 +338,7 @@
     const totalSlides = slides.length;
 
     function showSlide(index) {
-      // Wrap around if index is out of bounds
+      
       if (index >= totalSlides) {
         currentIndex = 0;
       } else if (index < 0) {
@@ -343,11 +347,11 @@
         currentIndex = index;
       }
 
-      // Remove active class from all slides and dots
+      
       slides.forEach(slide => slide.classList.remove('active'));
       dots.forEach(dot => dot.classList.remove('active'));
 
-      // Add active class to current slide and dot
+      
       slides[currentIndex].classList.add('active');
       dots[currentIndex].classList.add('active');
     }
@@ -360,7 +364,7 @@
       showSlide(index);
     }
 
-    // Optional: Auto-rotate carousel every 5 seconds
+    
     setInterval(() => {
       changeSlide(1);
     }, 5000);
@@ -404,7 +408,7 @@
       function autoPlay() {
         autoPlayInterval = setInterval(() => {
           showImage(actualIndex + 1);
-        }, 1000);
+        }, 3000);
       }
 
       function resetAutoPlay() {
