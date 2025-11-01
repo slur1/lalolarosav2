@@ -16,8 +16,8 @@ tailwind.config = {
               heading: ['Gwendolyn', 'cursive'],
             },
             backgroundImage: {
-              'hero-bg': "url('./assets/images/wallpaper.webp')",
-              'mobile-bg': "url('./assets/images/mobile-wallpaper.webp')",
+              'hero-bg': "url('assets/images/wallpaper.webp')",
+              'mobile-bg': "url('assets/images/mobile-wallpaper.webp')",
             },
           },
         },
